@@ -1,8 +1,10 @@
-# TASK-TEAM
+#  TASK-TEAM
 
 Breve descripción del proyecto y su propósito.
 
-## Índice
+<br>
+
+## Index
 
 1. [Instalación](#instalación)
 2. [Uso](#uso)
@@ -11,11 +13,15 @@ Breve descripción del proyecto y su propósito.
 5. [Créditos](#créditos)
 6. [Licencia](#licencia)
 
-## Instalación
+<br>
+
+## Installation
 
 Instrucciones sobre cómo instalar y configurar el proyecto. Puedes incluir dependencias externas necesarias, comandos de instalación, requisitos del sistema, etc.
 
-## Uso
+<br>
+
+## Usage
 
 Explicación detallada sobre cómo utilizar el proyecto. Incluye ejemplos, comandos básicos, y cualquier otra información relevante para los usuarios.
 
