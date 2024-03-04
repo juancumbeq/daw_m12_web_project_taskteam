@@ -27,26 +27,26 @@ Explicación detallada sobre cómo utilizar el proyecto. Incluye ejemplos, coman
 
 <br>
 
-## Estructura de archivos
+## File Structure
 
 Descripción de la estructura de archivos del proyecto, especialmente útil para proyectos más grandes. Puedes proporcionar una descripción breve de cada archivo o directorio importante.
 
 <br>
 
-## Contribución
+## Contribution
 
 Instrucciones para contribuir al proyecto, incluyendo cómo reportar problemas, enviar propuestas de mejora, y directrices para hacer cambios en el código.
 
 <br>
 
-## Créditos
+## Credits
 
 Agradecimientos a las personas o proyectos que han contribuido de alguna manera al desarrollo de tu proyecto. También puedes incluir enlaces a recursos útiles que hayas utilizado.
 
 <br>
 
-## Licencia
+## Licence
 
-Indica la licencia bajo la cual se distribuye el proyecto. Es importante ser claro acerca de los términos de uso y redistribución del código.
+This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
 <br>
