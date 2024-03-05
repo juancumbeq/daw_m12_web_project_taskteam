@@ -26,7 +26,9 @@ In summary, this web application aims to provide a comprehensive and efficient s
 
 <br>
 
-## Installation <a name="installation"></a>
+<a name="installation"></a>
+
+## Installation 
 
 ### Previous Requirements
 Make sure you have XAMPP installed on your computer. You can download it from the official Apache Friends website.
@@ -54,35 +56,47 @@ Make sure you have XAMPP installed on your computer. You can download it from th
 
 <br>
 
-## Stack <a name="stack"></a>
+<a name="stack"></a>
+
+## Stack 
 
 <br>
 
-## Usage <a name="usage"></a>
+<a name="usage"></a>
+
+## Usage 
 
 Explicación detallada sobre cómo utilizar el proyecto. Incluye ejemplos, comandos básicos, y cualquier otra información relevante para los usuarios.
 
 <br>
 
-## File Structure <a name="file-structure"></a>
+<a name="file-structure"></a>
+
+## File Structure 
 
 Descripción de la estructura de archivos del proyecto, especialmente útil para proyectos más grandes. Puedes proporcionar una descripción breve de cada archivo o directorio importante.
 
 <br>
 
-## Contribution <a name="contributing"></a>
+<a name="contributing"></a>
 
+
+## Contribution 
 Instrucciones para contribuir al proyecto, incluyendo cómo reportar problemas, enviar propuestas de mejora, y directrices para hacer cambios en el código.
 
 <br>
 
-## Credits <a name="credits"></a>
+<a name="credits"></a>
+
+## Credits 
 
 Agradecimientos a las personas o proyectos que han contribuido de alguna manera al desarrollo de tu proyecto. También puedes incluir enlaces a recursos útiles que hayas utilizado.
 
 <br>
 
-## Licence <a name="licence"></a>
+<a name="licence"></a>
+
+## Licence 
 
 This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
