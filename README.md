@@ -1,4 +1,4 @@
-# TaskTeam
+# TaskTeam 👨🏽‍💻
 
 TaskTeam it the final project for my Certificate of the Higher Education in Web Application Development. It is a web-based task management system that allows efficient organization and tracking of employee tasks within a company. It features a user-friendly interface, and encompasses two main components: an employee management module and a task management module.
 
@@ -27,7 +27,29 @@ In summary, this web application aims to provide a comprehensive and efficient s
 
 ## Installation
 
-Instrucciones sobre cómo instalar y configurar el proyecto. Puedes incluir dependencias externas necesarias, comandos de instalación, requisitos del sistema, etc.
+### Previous Requirements
+Make sure you have XAMPP installed on your computer. You can download it from the official Apache Friends website.
+
+### Installation Steps
+  - XAMPP Installation:
+    - Download the XAMPP installer from the official website and run it.
+    - Follow the installer instructions to complete the installation of XAMPP on your computer.
+    - Once installed, open the XAMPP Control Panel and make sure that the Apache and MySQL services are active.
+  
+  - Database Configuration:
+    - Open your web browser and visit [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
+    - Create a new database named daw_m12_app.
+    - Import the provided SQL file with the web application or manually create the necessary tables and relationships.
+
+  - Transfer of the Web Application:
+    - Copy the web application files to the htdocs folder within the XAMPP installation directory. Usually, this folder is located at C:\xampp\htdocs on Windows systems or /Applications/XAMPP/htdocs on macOS. The resulting path should be: /Applications/XAMPP/xamppfiles/htdocs/DAW_FP/M12_WebApp/.
+
+  - Starting the Local Server:
+    - Return to the XAMPP Control Panel and click on "Start" to initiate the Apache and MySQL services.
+    - Open your web browser and visit [http://localhost/DAW_FP/M12_WebApp/index_main.php](http://localhost/DAW_FP/M12_WebApp/index_main.php)
+
+  - Application Testing:
+    - If everything was configured correctly, you should be able to see the TaskTeam login page.Congratulations! You have successfully installed your PHP web application on your local server using XAMPP. Now you can start developing and testing your application without needing an internet connection.
 
 <br>
 
