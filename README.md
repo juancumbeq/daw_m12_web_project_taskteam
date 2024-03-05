@@ -16,16 +16,17 @@ In summary, this web application aims to provide a comprehensive and efficient s
 
 ## Index
 
-1. [Instalación](#instalación)
-2. [Uso](#uso)
-3. [Estructura de archivos](#estructura-de-archivos)
-4. [Contribución](#contribución)
-5. [Créditos](#créditos)
-6. [Licencia](#licencia)
+1. [Installation](#installation)
+2. [Stack](#stack)
+3. [Usage](#usage)
+4. [File Structure](#file-structure)
+5. [Contribution](#contribution)
+6. [Credits](#credits)
+7. [License](#license)
 
 <br>
 
-## Installation
+## Installation <a name="installation"></a>
 
 ### Previous Requirements
 Make sure you have XAMPP installed on your computer. You can download it from the official Apache Friends website.
@@ -53,31 +54,35 @@ Make sure you have XAMPP installed on your computer. You can download it from th
 
 <br>
 
-## Usage
+## Stack <a name="stack"></a>
+
+<br>
+
+## Usage <a name="usage"></a>
 
 Explicación detallada sobre cómo utilizar el proyecto. Incluye ejemplos, comandos básicos, y cualquier otra información relevante para los usuarios.
 
 <br>
 
-## File Structure
+## File Structure <a name="file-structure"></a>
 
 Descripción de la estructura de archivos del proyecto, especialmente útil para proyectos más grandes. Puedes proporcionar una descripción breve de cada archivo o directorio importante.
 
 <br>
 
-## Contribution
+## Contribution <a name="contributing"></a>
 
 Instrucciones para contribuir al proyecto, incluyendo cómo reportar problemas, enviar propuestas de mejora, y directrices para hacer cambios en el código.
 
 <br>
 
-## Credits
+## Credits <a name="credits"></a>
 
 Agradecimientos a las personas o proyectos que han contribuido de alguna manera al desarrollo de tu proyecto. También puedes incluir enlaces a recursos útiles que hayas utilizado.
 
 <br>
 
-## Licence
+## Licence <a name="licence"></a>
 
 This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
