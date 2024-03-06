@@ -18,11 +18,19 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 
 <br>
 
+<p align="center">
+   <img src="https://img.shields.io/badge/Estado%20del%20Proyecto-Finalizado-brightgreen"/>
+</p>
+
+
+
+<br>
+
 ## Índice
 
 1. [Instalación](#instalación)
 2. [Tecnologías empleadas](#tecnologías)
-3. [Uso](#uso)
+3. [Funcionalidades](#funcionalidades)
 4. [Estructura de Archivos](#estructura-de-archivos)
 5. [Contribución](#contribución)
 6. [Créditos](#créditos)
@@ -102,9 +110,9 @@ Cada una de estas tecnologías ha desempeñado un papel clave en el desarrollo y
 
 <br>
 
-<a name="uso"></a>
+<a name="funcionalidades"></a>
 
-## Uso
+## Funcionalidades
 
 Detailed explanation on how to use the project. Includes examples, basic commands, and any other relevant information for users.
 
@@ -115,22 +123,6 @@ Detailed explanation on how to use the project. Includes examples, basic command
 ## Estructura de Archivos
 
 Descripción de la estructura de archivos del proyecto, especialmente útil para proyectos más grandes. Puedes proporcionar una descripción breve de cada archivo o directorio importante.
-
-<br>
-
-<a name="contribución"></a>
-
-## Contribución
-
-Instrucciones para contribuir al proyecto, incluyendo cómo reportar problemas, enviar propuestas de mejora y directrices para hacer cambios en el código.
-
-<br>
-
-<a name="créditos"></a>
-
-## Créditos
-
-Agradecimientos a las personas o proyectos que han contribuido de alguna manera al desarrollo de tu proyecto. También puedes incluir enlaces a recursos útiles que hayas utilizado.
 
 <br>
 
