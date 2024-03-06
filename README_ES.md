@@ -124,55 +124,63 @@ Detailed explanation on how to use the project. Includes examples, basic command
 
 ## Estructura de Archivos
 
-Descripción de la estructura de archivos del proyecto, especialmente útil para proyectos más grandes. Puedes proporcionar una descripción breve de cada archivo o directorio importante.
+Descripción de la estructura de archivos del proyecto.
 
+```
 M12_WebApp
+│
 ├─ assets
 │  └─ jefes_dptos_docs
-│     ├─ .DS_Store
 │     ├─ JuanCarlos_GonzalezRuiz_foto.jpg
 │     ├─ LauraMaria_MartinezPerez_foto.jpg
 │     └─ LuisAlejandro_SanchezLopez_foto.jpg
-├─ bd.php
-├─ index_main.php
+│
 ├─ login
 │  ├─ controller
 │  │  └─ LoginController.php
-│  ├─ login.php
-│  ├─ logout.php
 │  ├─ model
 │  │  └─ UserModel.php
-│  └─ view
-│     └─ LoginView.php
+│  ├─ view
+│  │   └─ LoginView.php
+│  ├─ login.php
+│  ├─ logout.php
+│
 ├─ secciones
 │  ├─ employees
+│  │  ├─ empleados_docs
 │  │  ├─ controllers
 │  │  │  └─ EmployeesController.php
-│  │  ├─ create_employees.php
-│  │  ├─ edit_employees.php
-│  │  ├─ empleados_docs
-│  │  ├─ index_employees.php
 │  │  ├─ model
 │  │  │  └─ EmployeesModel.php
-│  │  └─ view
-│  │     ├─ CreateEmployeesView.php
-│  │     ├─ EditEmployeesView.php
-│  │     └─ EmployeesView.php
+│  │  ├─ view
+│  │  │  ├─ CreateEmployeesView.php
+│  │  │  ├─ EditEmployeesView.php
+│  │  │  └─ EmployeesView.php
+│  │  ├─ create_employees.php
+│  │  ├─ edit_employees.php
+│  │  └─ index_employees.php
+│  │
 │  └─ tasks
 │     ├─ controllers
 │     │  └─ TasksController.php
+│     ├─ model
+│     │  └─ TasksModel.php
+│     ├─ view
+│     │   ├─ CreateTasksView.php
+│     │   ├─ EditTasksView.php
+│     │   └─ TasksView.php
 │     ├─ create_tasks.php
 │     ├─ edit_tasks.php
 │     ├─ index_tasks.php
-│     ├─ model
-│     │  └─ TasksModel.php
-│     └─ view
-│        ├─ CreateTasksView.php
-│        ├─ EditTasksView.php
-│        └─ TasksView.php
-└─ templates
-   ├─ footer.php
-   └─ header.php
+│
+├─ templates
+│   ├─ footer.php
+│   └─ header.php
+│
+├─ bd.php
+└─ index_main.php
+
+````
 
 <br>
 
