@@ -179,8 +179,77 @@ M12_WebApp
 │
 ├─ bd.php
 └─ index_main.php
+```
 
-````
+<br>
+
+<a name="backend"></a>
+
+## Back-end
+
+El desarrollo del Back-end se llevó a cabo siguiendo el patrón MVC. Se han implementado las clases para los controladores y los modelos, definidas en las fase de análisis.
+Como se ha mencionado en el apartado de Diagrama se Clases, el procedimiento de implementación del back-end de las partes principales de la aplicación vino como consecuencia de tener estructurado y mínimamente funcional el front-end, porque de esta manera era posible manejar datos reales y conocer el flujo de los mismos, para la detección y solución de errores.
+45
+  TaskTeam - Juan Fernando Cumbe Quispi
+Para poder entender con mayor facilidad los detalles de las clases y su métodos, es importante tener en cuenta que los controladores y los modelos llevan a cabo todo el manejo del back-end, el cuál ha sido implementado en PHP. Encargándose el modelo de toda la interacción con la base de datos y el controlador de la recepción, manejo y envío de estos mismos datos hacia y desde el modelo y la vista.
+En la codificación de los controladores también se instancian objetos de los modelos correspondientes, conforme se requiera interactuar con la base de datos. De esta manera es únicamente el controlador el que se puede comunicar con el modelo, dotando de una mayor seguridad al aplicativo.
+Por último, se codifican las clases del modelo, definiendo todas las consultas requeridas para devolver la información solicitada por el controlador.
+A lo largo del desarrollo del back-end se detectaron deficiencias en las clases que se plantearon inicialmente, ya que a medida que iba construyendo la aplicación surgían nuevas necesidades y oportunidades de optimización y reutilización de código. De modo que, durante toda la implementación del código hubo una retroalimentación con el análisis del diagrama de clases, dando como resultado final el que podemos encontrar en el Anexo VI - Diagrama de Clases.
+A continuación se mencionan las principales clases que manejan el grueso de los datos del aplicativo:
+● Clase LoginController (controlador de acceso): se encarga de recibir las credenciales de usuario procedentes de la vista, usa como propiedades un objeto userModel que le permite establecer conexión con el modelo de usuarios.
+○ login(): transmite las credenciales de usuario hacia el modelo, inicia una sesión y una vez obtiene una respuesta por parte del modelo almacena los datos dentro de la variable $_SESSION. Finalmente redirige al usuario a la página de HOME. En caso de que las credenciales sean erróneas pasa un mensaje a la vista para informar al usuario.
+46
+
+  TaskTeam - Juan Fernando Cumbe Quispi
+47
+● Clase UserModel (modelo de usuarios): recibe los datos por parte del controlador LoginController y haciendo uso de la propiedad $conexion puede establecer contacto con la base de datos correspondiente.
+○ verificarCredenciales(): inserta las credenciales del usuario dentro de las sentencias SQL que le permiten conocer la identidad del usuario mencionado. Retorna los datos correspondientes en función de los resultados de las querys.
+● Clase EmployeeController (controlador de los empleados de un departamento): es el encargado de gestionar el CRUD de empleados, es decir, se encarga de la lectura, creación, actualizado y borrado de empleados. Es necesario disponer de permisos como jefe de departamento para acceder a la vista correspondiente y por ende hacer uso del controlador. Usa como propiedades un objeto employeesModel que le permite establecer conexión con el modelo de empleados.
+○ CreateEmployees(): recibe los datos del formulario de la vista dentro de un array y extrae cada uno de los datos, guardándolos en variables que posteriormente enviará al modelo. Si en el modelo no se produce algún error durante el proceso en creado, se redirecciona al usuario hacia la página de la lista de empleados.
+○ FixedDataCreateForm(): para crear un nuevo empleado es necesario disponer de información determinada en el formulario, como son los desplegables. Este método se encarga de mediante el identificativo del departamento solicitar la información relevante del mismo, como pueden ser los puestos disponibles para ese departamento.
+○ ReadEmployees(): realiza una llamada al método correspondiente del modelo para obtener un array con toda la información de los empleados de la empresa.
+○ UpdateEmployees(): funciona de manera similar al método CreateEmployees() pero con la diferencia de que requiere de un parámetro más para funcionar, se trata del identificativo del empleado, lo que le permite indicar al modelo sobre qué registro actuar.
+
+  TaskTeam - Juan Fernando Cumbe Quispi
+48
+○ FixedDataUpdateForm(): del mismo modo que con FixedDataCreateForm(), a la hora de actualizar la información de los empleados es necesario cargar de manera previa información en el formulario.
+○ DeleteEmployees(): mediante el uso de un identificador realiza un llamado al método correspondiente del modelo para ejecutar el borrado de un empleado.
+● Clase EmployeesModel (modelo de los empleados): es la clase encargada de actuar sobre la BBDD ejecutando las sentencias SQL correspondientes.
+○ CreateEmployeesModel(): recibe a través del controlador la información del empleado que necesita ser creado. Se encarga de gestionar el renombrado y copiado de los archivos subidos al formulario para que pasen a estar a disposición del back-end. En caso de que la sentencia de inserción se realice de manera satisfactoria se retorna true.
+○ FixedDataCreateFormEmployees(): se encarga de obtener los puestos y la información del departamento, para que a la hora de crear un nuevo empleado se disponga de información seleccionable relevante a cada departamento.
+○ ReadEmployees(): extrae toda la información de los empleados de la base de datos y la entrega al controlador.
+○ UpdateEmployees(): nuevamente de manera similar al método de creado, se encarga de insertar la nueva información del empleado para actualizar el registro correspondiente. Así mismo, gestiona el borrado de archivos obsoletos de empleados y traslada las versiones actualizadas.
+○ FixedDataUpdateFormModel(): haciendo uso del $id_empleado, obtiene toda la información del registro elegido para que en el formulario de actualización de datos aparezcan por defecto los datos actuales y se pueda seleccionar con precisión qué dato editar.
+○ DeleteEmployeeModel(): se encarga del borrado del registro y de los archivos relevantes a un empleado en concreto.
+
+  TaskTeam - Juan Fernando Cumbe Quispi
+49
+● Clase TasksController (controlador de las tareas): es el encargado de gestionar el CRUD de las tareas. Los empleados pueden hacer uso de algunos de los métodos de esta clase como son los de lectura y actualizado, pero solo los usuarios con permisos suficientes pueden acceder a los métodos de creación y eliminación de tareas. Usa como propiedades un objeto tasksModel que le permite establecer conexión con el modelo de las tareas.
+○ CreateTasks(): se encarga de recibir los datos del formulario dentro de un array y de desestructurarlos en variables independientes que luego envía al modelo para que construya una sentencia SQL y la ejecute. Si durante el proceso no se produce algún error se redirecciona al usuario a la página de la lista de tareas.
+○ FixedDataCreateForm(): a la hora de crear una tarea es necesario asignarla a un departamento y un empleado en concreto. Este método se encarga de usar el identificador del departamento para solicitar los datos correspondientes al modelo.
+○ ReadTasksDptoGeneral(): método que se encarga de la lectura de todas las tareas correspondientes a un departamento.
+○ ReadTasksDptoSpecific(): este método realiza una función similar al anterior con la diferencia de que las tareas que obtiene han de ser las asignadas a un empleado en particular.
+○ UpdateTasks(): del mismo modo que el método de creado se encarga de recibir los datos del formulario y desestructurarlos en variables independientes que luego envía al modelo para que construya una sentencia SQL y la ejecute. En caso de que la operación se realice de manera exitosa se redirecciona al usuario hacia la lista de tareas.
+○ FixedDataUpdateForm(): se encarga de obtener del modelo toda la información relevante de una tarea para rellenar el formulario de manera predeterminada.
+○ DeleteTasks(): haciendo uso del identificador de una tarea, indica al modelo sobre qué registro actuar para ejecutar la operación de borrado.
+● Clase TasksModel (modelo de las tareas): ejecuta las sentencias SQL sobre la base de datos correspondiente al CRUD.
+
+ TaskTeam - Juan Fernando Cumbe Quispi
+○ CreateTasksModel(): recibe los datos del controlador en varios parámetros y los usa en la sentencia SQL de creado de tarea. En caso de que todo se ejecute correctamente retorna true.
+○ FixedDataCreateFormModel(): obtiene toda la información relevante del departamento como es la lista de los empleados disponibles.
+○ ReadTasksDptoGeneralModel(): obtiene los datos de todas las tareas de un departamento en concreto. Esa información será mostrada posteriormente en forma de tabla.
+○ ReadTasksDptoSpecificModel(): se encarga de obtener todos los datos de las tareas de un empleado en particular.
+○ UpdateTasks(): de la misma manera que el método de creado, recibe todos los datos que se han de actualizar a través de los parámetros. Cuenta con un parámetro extra que indica sobre qué registro se ha de ejecutar la sentencia de actualizado.
+○ FixedDataUpdateFormModel(): se encarga de obtener toda la información de una tarea en concreto, para que a través del controlador podamos ver el formulario con los datos cargados.
+○ DeleteTasksModel(): haciendo uso de un identificador del registro, actúa sobre la base de datos ejecutando la operación de borrado.
+
+<br>
+
+<a name="backend"></a>
+
+## Front-end
+
+
 
 <br>
 
