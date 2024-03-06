@@ -1,3 +1,7 @@
+<p align="right">
+	<a href="README_ES.md">Haga clic aquí para versión en español</a>
+</p>
+
 # TaskTeam 👨🏽‍💻
 
 TaskTeam it the final project for my Certificate of the Higher Education in Web Application Development. It is a web-based task management system that allows efficient organization and tracking of employee tasks within a company. It features a user-friendly interface, and encompasses two main components: an employee management module and a task management module.
@@ -32,7 +36,7 @@ In summary, this web application aims to provide a comprehensive and efficient s
 
 ### Previous Requirements
 
-Make sure you have XAMPP installed on your computer. You can download it from the official Apache Friends website.
+Make sure you have XAMPP installed on your computer. You can download it from [the official Apache Friends website.](https://www.apachefriends.org/es/index.html)
 
 ### Installation Steps
 
@@ -68,31 +72,31 @@ Make sure you have XAMPP installed on your computer. You can download it from th
 
 In TaskTeam, various technologies have been used for its development and operation. Most of them have been widely used throughout the training cycle. Below, a brief description is provided for what each of them has been used for:
 
-  - **HTML5**: HTML5 has been used for the structure and markup of TaskTeam's web pages. It is the standard language for creating web content and allows defining the structure of elements and their interaction.
+- **HTML5**: HTML5 has been used for the structure and markup of TaskTeam's web pages. It is the standard language for creating web content and allows defining the structure of elements and their interaction.
 
-  - **CSS**: Cascading Style Sheets have been used to apply styles and designs to TaskTeam's pages. It allows controlling the visual presentation of elements, such as colors, fonts, sizes, page layouts, among others. In this particular project, the use of CSS comes together with Bootstrap.
+- **CSS**: Cascading Style Sheets have been used to apply styles and designs to TaskTeam's pages. It allows controlling the visual presentation of elements, such as colors, fonts, sizes, page layouts, among others. In this particular project, the use of CSS comes together with Bootstrap.
 
-  - **Bootstrap**: Bootstrap is an open-source framework that provides a set of predefined CSS tools and styles, allowing for the quick and easy construction of responsive and attractive web interfaces. It has been used in the application to facilitate the creation of a modern and adaptive user interface.
+- **Bootstrap**: Bootstrap is an open-source framework that provides a set of predefined CSS tools and styles, allowing for the quick and easy construction of responsive and attractive web interfaces. It has been used in the application to facilitate the creation of a modern and adaptive user interface.
 
-  - **JavaScript**: JavaScript has been used to implement interactivity on TaskTeam's pages, thereby allowing dynamic actions for and by the user. More specifically, I have used:
+- **JavaScript**: JavaScript has been used to implement interactivity on TaskTeam's pages, thereby allowing dynamic actions for and by the user. More specifically, I have used:
 
-  - **SweetAlert2**: It is a JavaScript library used to create pop-up windows and custom notifications when trying to make a modification to a database record. It provides an enhanced user experience by displaying messages attractively and in a user-friendly manner.
+- **SweetAlert2**: It is a JavaScript library used to create pop-up windows and custom notifications when trying to make a modification to a database record. It provides an enhanced user experience by displaying messages attractively and in a user-friendly manner.
 
-  - **DataTables**: DataTables is a JavaScript library used in TaskTeam to enhance the visualization and manipulation of data tables. It provides advanced features such as pagination, filtering, sorting, and searching in tables, improving the usability and presentation of tabular information in the application. Initially, DataTables was created as a jQuery library, which means it required including the jQuery library on the web page. However, in more recent versions, DataTables can also be used without jQuery as an independent JavaScript library, although the jQuery syntax is still maintained.
+- **DataTables**: DataTables is a JavaScript library used in TaskTeam to enhance the visualization and manipulation of data tables. It provides advanced features such as pagination, filtering, sorting, and searching in tables, improving the usability and presentation of tabular information in the application. Initially, DataTables was created as a jQuery library, which means it required including the jQuery library on the web page. However, in more recent versions, DataTables can also be used without jQuery as an independent JavaScript library, although the jQuery syntax is still maintained.
 
-  - **PHP**: It has been used as the server-side programming language in TaskTeam. It allows performing business operations and logic, accessing and managing databases, and generating dynamic content on web pages. The execution of ".php" files has been carried out in XAMPP as it has a server-side interpreter in Apache.
+- **PHP**: It has been used as the server-side programming language in TaskTeam. It allows performing business operations and logic, accessing and managing databases, and generating dynamic content on web pages. The execution of ".php" files has been carried out in XAMPP as it has a server-side interpreter in Apache.
 
-  - **XAMPP**: It is a software package that includes an Apache web server, a MySQL database, and the PHP interpreter. It has been used to create a local development environment in which TaskTeam has been executed and tested.
+- **XAMPP**: It is a software package that includes an Apache web server, a MySQL database, and the PHP interpreter. It has been used to create a local development environment in which TaskTeam has been executed and tested.
 
-  - **phpMyAdmin**: To be able to access the MySQL database, it is necessary to have a DBMS (Database Management System). phpMyAdmin is the DBMS of XAMPP and has been used in TaskTeam to manage the database and perform operations such as creating tables, queries, and modifications to the data.
+- **phpMyAdmin**: To be able to access the MySQL database, it is necessary to have a DBMS (Database Management System). phpMyAdmin is the DBMS of XAMPP and has been used in TaskTeam to manage the database and perform operations such as creating tables, queries, and modifications to the data.
 
-  - **Browsers**: Primarily, two web browsers, Google Chrome and Brave, have been used to test and verify the operation of the application as well as compatibility and performance in different viewing environments.
+- **Browsers**: Primarily, two web browsers, Google Chrome and Brave, have been used to test and verify the operation of the application as well as compatibility and performance in different viewing environments.
 
-  - **Visual Studio Code**: It is a Microsoft code editor used to write and edit HTML, JavaScript, and PHP files. It provides tools and extensions that facilitate programming and improve productivity.
+- **Visual Studio Code**: It is a Microsoft code editor used to write and edit HTML, JavaScript, and PHP files. It provides tools and extensions that facilitate programming and improve productivity.
 
-  - **ClickUp**: It is a project management tool used to organize and track tasks, assign responsibilities, set deadlines, and priorities.
+- **ClickUp**: It is a project management tool used to organize and track tasks, assign responsibilities, set deadlines, and priorities.
 
-  - **Draw.io**: Draw.io is a diagram creation tool used to design and visually represent the structure of the database (E-R diagram, relational diagram), use case diagrams, and other diagrams necessary for the project's development.
+- **Draw.io**: Draw.io is a diagram creation tool used to design and visually represent the structure of the database (E-R diagram, relational diagram), use case diagrams, and other diagrams necessary for the project's development.
 
 Each of these technologies has played a key role in the development and operation of TaskTeam, allowing the creation of a functional, interactive, and visually appealing web application.
 
