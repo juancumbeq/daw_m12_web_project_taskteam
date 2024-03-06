@@ -6,7 +6,7 @@
 
 TaskTeam it the final project for my Certificate of the Higher Education in Web Application Development. It is a web-based task management system that allows efficient organization and tracking of employee tasks within a company. It features a user-friendly interface, and encompasses two main components: an employee management module and a task management module.
 
-The employee management module enables the registration, viewing, editing, and deletion of employee records. It includes fields for employee details such as names, positions, and departments. Additionally, it provides login functionality for employees and department managers, ensuring secure access to the system.
+The employee management module enables the registration, viewing, editing, and deletion of employee records. It includes fields for employee details such as names, positions, and departments.
 
 The task management module allows the creation, assignment, and management of tasks associated with employees. Tasks can be searched, filtered, and sorted based on various criteria. Each task is linked to a specific employee and includes details such as task description, start and end dates, and status. This module provides an overview of the tasks assigned to each employee, facilitating effective task distribution and tracking.
 
