@@ -157,12 +157,8 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 <br>
 
 <p align="center">
-  <a href="https://github.com/juancumbeq/DAM_M08_Multimedia_and_Mobile_Devices_Programming/blob/main/Android/Activities%20%26%20Layouts" target="_blank">
-    <img src="https://github.com/juancumbeq/DAM_M08_Multimedia_and_Mobile_Devices_Programming/blob/main/Android/Activities%20%26%20Layouts/Images/LinearLayout_Phone.png?raw=true" width= "23%"title="Linear Layout">&nbsp;&nbsp;&nbsp;
-  </a>
-  <a href="https://github.com/juancumbeq/DAM_M08_Multimedia_and_Mobile_Devices_Programming/blob/main/Android/Activities%20%26%20Layouts" target="_blank">
-    <img src="https://github.com/juancumbeq/DAM_M08_Multimedia_and_Mobile_Devices_Programming/blob/main/Android/Activities%20%26%20Layouts/Images/FrameLayout_Phone.png?raw=true" width= "23%"title="Linear Layout">&nbsp;&nbsp;&nbsp;
-  </a>
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoJefe.png?raw=true" width= "40%"title="Use Cases">&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoEmpleado.png?raw=true" width= "50%"title="Use Cases">&nbsp;&nbsp;&nbsp;
 </p>
 <br>
 
