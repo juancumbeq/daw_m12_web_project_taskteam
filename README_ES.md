@@ -396,13 +396,13 @@ M12_WebApp
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_LoginError.png?raw=true" width= "90%" title="Captura">
   </p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_HomeManager.png?raw=true" width= "90%" title="Captura">
   </p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaEmpleados.png?raw=true" width= "90%" title="Captura">
   </p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_AñadirEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
