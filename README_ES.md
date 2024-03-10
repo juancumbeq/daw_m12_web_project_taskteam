@@ -32,7 +32,6 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 - [Funcionalidades](#funcionalidades)
 - [Base de Datos](#base-de-datos)
 - [Backend](#back-end)
-  incluir diagrama de clases
 - [Frontend](#front-end)
 - [Estructura de Archivos](#estructura-de-archivos)
 - [Capturas](#capturas)
@@ -175,8 +174,6 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 </p>
 <br>
 
-
-
 <a name="base-de-datos"></a>
 
 ## Base de datos
@@ -191,7 +188,6 @@ Una vez tenemos todas la entidades y los atributos que deseamos almacenar se dis
 </p>
 <br>
 
-
 Seguidamente, y haciendo uso del SGDB phpMyAdmin se crea la base de datos denominada: daw_m12_app. En esta base de datos se han definido todas las tablas del modelo relacional, las claves primarias y foráneas, y el resto de campos:
 
 <br>
@@ -199,8 +195,6 @@ Seguidamente, y haciendo uso del SGDB phpMyAdmin se crea la base de datos denomi
     <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Relacional.png?raw=true" width= "70%" title="Diagrama relacional">
 </p>
 <br>
-
-
 
 <a name="backend"></a>
 
@@ -224,7 +218,6 @@ A continuación se mencionan las principales clases que manejan el grueso de los
 
   - `verificarCredenciales()`: Este método inserta las credenciales del usuario dentro de las sentencias SQL que le permiten autenticar al usuario. Retorna los datos correspondientes en función de los resultados de las consultas.
 
-
 - **Clase EmployeeController (controlador de empleados)**: el controlador EmployeeController se encarga de gestionar el CRUD de empleados, es decir, de la lectura, creación, actualización y eliminación de empleados. Requiere permisos como jefe de departamento para acceder a la vista correspondiente y hacer uso del controlador. Utiliza un objeto `employeesModel` para establecer conexión con el modelo de empleados.
 
   - `CreateEmployees()`: Recibe los datos del formulario de la vista dentro de un array y los guarda en el modelo. Si no hay errores en el proceso de creación, redirige al usuario hacia la página de la lista de empleados.
@@ -239,7 +232,6 @@ A continuación se mencionan las principales clases que manejan el grueso de los
 
   - `DeleteEmployees()`: Mediante el uso de un identificador, ejecuta el borrado de un empleado en la base de datos.
 
-
 - **Clase EmployeesModel (modelo de empleados)**: la clase EmployeesModel actúa sobre la base de datos ejecutando las sentencias SQL correspondientes.
 
   - `CreateEmployeesModel()`: Recibe la información del empleado que necesita ser creado y gestiona el renombrado y copiado de los archivos subidos al formulario. Retorna true si la inserción se realiza satisfactoriamente.
@@ -253,7 +245,6 @@ A continuación se mencionan las principales clases que manejan el grueso de los
   - `FixedDataUpdateFormModel()`: Utiliza el identificador del empleado para obtener toda su información y mostrarla en el formulario de actualización.
 
   - `DeleteEmployeeModel()`: Se encarga del borrado del registro y de los archivos relevantes a un empleado en concreto.
-
 
 - **Clase TasksController (controlador de tareas)**: el controlador TasksController gestiona el CRUD de las tareas. Los empleados pueden acceder a los métodos de lectura y actualización, pero solo los usuarios con permisos suficientes pueden crear o eliminar tareas. Utiliza un objeto `tasksModel` para establecer conexión con el modelo de tareas.
 
@@ -270,7 +261,6 @@ A continuación se mencionan las principales clases que manejan el grueso de los
   - `FixedDataUpdateForm()`: Se encarga de obtener del modelo toda la información relevante de una tarea para rellenar el formulario de manera predeterminada.
 
   - `DeleteTasks()`: Elimina una tarea de la base de datos.
-
 
 - **Clase TasksModel (modelo de tareas)**: la clase TasksModel ejecuta las sentencias SQL sobre la base de datos correspondiente al CRUD.
 
@@ -296,8 +286,6 @@ En la siguiente imagen podemos ver el diagrama de clases resultante:
 </p>
 
 <br>
-
-
 
 <a name="backend"></a>
 
@@ -329,16 +317,13 @@ Luego, se procedió a construir las vistas que componen la aplicación, como las
 
 - **Encabezado (Header):** Menú de navegación que agrupa los enlaces más relevantes de la aplicación.
 
-
 <br>
-
-
 
 <a name="estructura-de-archivos"></a>
 
 ## Estructura de Archivos
 
-Descripción de la estructura de archivos del proyecto.
+Representación de la estructura de archivos del proyecto:
 
 ```
 M12_WebApp
