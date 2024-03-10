@@ -19,10 +19,12 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 <br>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/Estado%20del%20Proyecto-Finalizado-brightgreen"/>
+  <img src="https://img.shields.io/badge/Estado%20del%20Proyecto-Finalizado-brightgreen"/>
 </p>
 
 <br>
+
+
 
 ## Índice
 
@@ -42,6 +44,8 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 - [Autor](#autor)
 
 <br>
+
+
 
 <a name="instalación"></a>
 
@@ -79,11 +83,25 @@ Asegúraese de tener XAMPP instalado en tu computadora. Puedes descargarlo desde
 
 <br>
 
+
+
 <a name="modelo-de-desarrollo"></a>
 
 ## Modelo de Desarrollo
 
+Para establecer el ciclo de vida de TaskTeam, se ha optado por el modelo en cascada con realimentación. Esta elección se basa tras considerar que este modelo es el más adecuado para el alcance y tamaño del proyecto. Aunque en desarrollos muy grandes puede resultar complicado alcanzar el éxito debido a las numerosas dependencias que se generan, para proyectos más modestos se ha demostrado como uno de los más eficientes debido a su aplicación sencilla.
+
+El modelo en cascada con realimentación consta de una serie de fases que se completan de forma secuencial, pero cada una de ellas puede retroalimentar a la anterior en caso de ser necesario.
+
+Esto puede ocurrir cuando se detecta un error en una fase previa y se corrige, o cuando se produce un cambio en alguna condición del entorno que requiere ajustes.
+
+Las fases marcadas por este modelo se ajustan perfectamente al esquema propuesto en el proyecto, que son: análisis, diseño, codificación y pruebas. A excepción de la fase de mantenimiento, ya que el ciclo de vida de TaskTeam no contempla una fase de explotación.
+
+
+
 <br>
+
+
 
 <a name="tecnologías"></a>
 
