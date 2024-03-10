@@ -388,49 +388,79 @@ M12_WebApp
 <br>
 <details>
   <summary>Desplegar imágenes</summary>
+  <br>
 
+  <p align="center" style="font-style: italic;">Login</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+  
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_LoginError.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_HomeManager.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaEmpleados.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_AñadirEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
+
+  <p align="center" style="font-style: italic;">Login Error</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
   </p>
