@@ -30,20 +30,16 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 - [Modelo de Desarrollo](#modelo-de-desarrollo)
 - [Tecnologías empleadas](#tecnologías)
 - [Funcionalidades](#funcionalidades)
-incluir en este punto los casos de uso junto con los diagramas de casos de uso 
-- [Base de Datos](#base-de-datos) 
+  incluir en este punto los casos de uso junto con los diagramas de casos de uso
+- [Base de Datos](#base-de-datos)
 - [Backend](#back-end)
-incluir diagrama de clases
+  incluir diagrama de clases
 - [Frontend](#front-end)
 - [Estructura de Archivos](#estructura-de-archivos)
 - [Capturas](#capturas)
 - [Demo](#demo)
 - [Licencia](#licencia)
 - [Autor](#autor)
-
-
-
-
 
 <br>
 
@@ -80,6 +76,12 @@ Asegúraese de tener XAMPP instalado en tu computadora. Puedes descargarlo desde
 
 - **Pruebas de Aplicación**:
   - Si todo se configuró correctamente, deberías poder ver la página de inicio de sesión de TaskTeam. ¡Felicidades! Has instalado con éxito tu aplicación web PHP en tu servidor local utilizando XAMPP. Ahora puedes comenzar a desarrollar y probar tu aplicación sin necesidad de una conexión a internet.
+
+<br>
+
+<a name="modelo-de-desarrollo"></a>
+
+## Modelo de Desarrollo
 
 <br>
 
@@ -129,68 +131,13 @@ Detailed explanation on how to use the project. Includes examples, basic command
 
 <br>
 
-<a name="estructura-de-archivos"></a>
+<a name="base-de-datos"></a>
 
-## Estructura de Archivos
-
-Descripción de la estructura de archivos del proyecto.
-
-```
-M12_WebApp
-│
-├─ assets
-│  └─ jefes_dptos_docs
-│     ├─ JuanCarlos_GonzalezRuiz_foto.jpg
-│     ├─ LauraMaria_MartinezPerez_foto.jpg
-│     └─ LuisAlejandro_SanchezLopez_foto.jpg
-│
-├─ login
-│  ├─ controller
-│  │  └─ LoginController.php
-│  ├─ model
-│  │  └─ UserModel.php
-│  ├─ view
-│  │   └─ LoginView.php
-│  ├─ login.php
-│  ├─ logout.php
-│
-├─ secciones
-│  ├─ employees
-│  │  ├─ empleados_docs
-│  │  ├─ controllers
-│  │  │  └─ EmployeesController.php
-│  │  ├─ model
-│  │  │  └─ EmployeesModel.php
-│  │  ├─ view
-│  │  │  ├─ CreateEmployeesView.php
-│  │  │  ├─ EditEmployeesView.php
-│  │  │  └─ EmployeesView.php
-│  │  ├─ create_employees.php
-│  │  ├─ edit_employees.php
-│  │  └─ index_employees.php
-│  │
-│  └─ tasks
-│     ├─ controllers
-│     │  └─ TasksController.php
-│     ├─ model
-│     │  └─ TasksModel.php
-│     ├─ view
-│     │   ├─ CreateTasksView.php
-│     │   ├─ EditTasksView.php
-│     │   └─ TasksView.php
-│     ├─ create_tasks.php
-│     ├─ edit_tasks.php
-│     ├─ index_tasks.php
-│
-├─ templates
-│   ├─ footer.php
-│   └─ header.php
-│
-├─ bd.php
-└─ index_main.php
-```
+## Base de datos
 
 <br>
+
+
 
 <a name="backend"></a>
 
@@ -260,6 +207,86 @@ TaskTeam - Juan Fernando Cumbe Quispi
 
 <br>
 
+
+
+<a name="estructura-de-archivos"></a>
+
+## Estructura de Archivos
+
+Descripción de la estructura de archivos del proyecto.
+
+```
+M12_WebApp
+│
+├─ assets
+│  └─ jefes_dptos_docs
+│     ├─ JuanCarlos_GonzalezRuiz_foto.jpg
+│     ├─ LauraMaria_MartinezPerez_foto.jpg
+│     └─ LuisAlejandro_SanchezLopez_foto.jpg
+│
+├─ login
+│  ├─ controller
+│  │  └─ LoginController.php
+│  ├─ model
+│  │  └─ UserModel.php
+│  ├─ view
+│  │   └─ LoginView.php
+│  ├─ login.php
+│  ├─ logout.php
+│
+├─ secciones
+│  ├─ employees
+│  │  ├─ empleados_docs
+│  │  ├─ controllers
+│  │  │  └─ EmployeesController.php
+│  │  ├─ model
+│  │  │  └─ EmployeesModel.php
+│  │  ├─ view
+│  │  │  ├─ CreateEmployeesView.php
+│  │  │  ├─ EditEmployeesView.php
+│  │  │  └─ EmployeesView.php
+│  │  ├─ create_employees.php
+│  │  ├─ edit_employees.php
+│  │  └─ index_employees.php
+│  │
+│  └─ tasks
+│     ├─ controllers
+│     │  └─ TasksController.php
+│     ├─ model
+│     │  └─ TasksModel.php
+│     ├─ view
+│     │   ├─ CreateTasksView.php
+│     │   ├─ EditTasksView.php
+│     │   └─ TasksView.php
+│     ├─ create_tasks.php
+│     ├─ edit_tasks.php
+│     ├─ index_tasks.php
+│
+├─ templates
+│   ├─ footer.php
+│   └─ header.php
+│
+├─ bd.php
+└─ index_main.php
+```
+
+<br>
+
+
+<a name="capturas"></a>
+
+## Capturas
+
+<br>
+
+
+
+<a name="demo"></a>
+
+## Demo
+
+
+
 <a name="licencia"></a>
 
 ## Licencia
@@ -267,3 +294,9 @@ TaskTeam - Juan Fernando Cumbe Quispi
 Este proyecto está licenciado bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
 
 <br>
+
+
+
+<a name="autor"></a>
+
+## Autor
