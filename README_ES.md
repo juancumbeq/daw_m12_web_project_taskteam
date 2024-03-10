@@ -26,29 +26,20 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 
 ## Índice
 
-1. [Instalación](#instalación)
-2. [Tecnologías empleadas](#tecnologías)
-3. [Funcionalidades](#funcionalidades)
- incluir en este punto los casos de uso junto con los diagramas
-
-4. [Estructura de Archivos](#estructura-de-archivos)
-5. [Contribución](#contribución)
-
-[Modelo de Desarrollo](#modelo-de-desarrollo)
-
-[Base de Datos](#base-de-datos)
-[Backend](#back-end)
+- [Instalación](#instalación)
+- [Modelo de Desarrollo](#modelo-de-desarrollo)
+- [Tecnologías empleadas](#tecnologías)
+- [Funcionalidades](#funcionalidades)
+incluir en este punto los casos de uso junto con los diagramas de casos de uso 
+- [Base de Datos](#base-de-datos) 
+- [Backend](#back-end)
 incluir diagrama de clases
-[Frontend](#front-end)
-
-
-
-[Caputas](#capturas)
-
-[Demo](#demo)
-6. [Créditos](#créditos)
-7. [Licencia](#licencia)
-[Autor](#autor)
+- [Frontend](#front-end)
+- [Estructura de Archivos](#estructura-de-archivos)
+- [Capturas](#capturas)
+- [Demo](#demo)
+- [Licencia](#licencia)
+- [Autor](#autor)
 
 
 
