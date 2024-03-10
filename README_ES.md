@@ -208,7 +208,7 @@ Seguidamente, y haciendo uso del SGDB phpMyAdmin se crea la base de datos denomi
 
 El desarrollo del Back-end se llevó a cabo siguiendo el patrón MVC. Se han implementado las clases para los controladores y los modelos, definidas en las fase de análisis.
 
-Como se ha mencionado en el apartado de Diagrama se Clases, el procedimiento de implementación del back-end de las partes principales de la aplicación vino como consecuencia de tener estructurado y mínimamente funcional el front-end, porque de esta manera era posible manejar datos reales y conocer el flujo de los mismos, para la detección y solución de errores.
+El procedimiento de implementación del back-end de las partes principales de la aplicación vino como consecuencia de tener estructurado y mínimamente funcional el front-end, porque de esta manera era posible manejar datos reales y conocer el flujo de los mismos, para la detección y solución de errores.
 
 Para poder entender con mayor facilidad los detalles de las clases y su métodos, es importante tener en cuenta que los controladores y los modelos llevan a cabo todo el manejo del back-end, el cuál ha sido implementado en PHP. Encargándose el modelo de toda la interacción con la base de datos y el controlador de la recepción, manejo y envío de estos mismos datos hacia y desde el modelo y la vista.
 
@@ -216,7 +216,7 @@ En la codificación de los controladores también se instancian objetos de los m
 
 Por último, se codifican las clases del modelo, definiendo todas las consultas requeridas para devolver la información solicitada por el controlador.
 
-A lo largo del desarrollo del back-end se detectaron deficiencias en las clases que se plantearon inicialmente, ya que a medida que iba construyendo la aplicación surgían nuevas necesidades y oportunidades de optimización y reutilización de código. De modo que, durante toda la implementación del código hubo una retroalimentación con el análisis del diagrama de clases, dando como resultado final el que podemos encontrar en el Anexo VI - Diagrama de Clases.
+A lo largo del desarrollo del back-end se detectaron deficiencias en las clases que se plantearon inicialmente, ya que a medida que iba construyendo la aplicación surgían nuevas necesidades y oportunidades de optimización y reutilización de código.
 
 A continuación se mencionan las principales clases que manejan el grueso de los datos del aplicativo:
 
@@ -289,6 +289,8 @@ A continuación se mencionan las principales clases que manejan el grueso de los
   - `DeleteTasksModel()`: Elimina una tarea de la base de datos.
 
 <br>
+En la siguiente imagen podemos ver el diagrama de clases resultante:
+<br>
 <p align="center">
     <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Clases.png?raw=true" width= "90%" title="Diagrama de clases">
 </p>
@@ -301,7 +303,36 @@ A continuación se mencionan las principales clases que manejan el grueso de los
 
 ## Front-end
 
+Durante el desarrollo del back-end, también se inició con el desarrollo del front-end, aunque inicialmente no fue a gran escala. Se enfocó en implementar funcionalidades básicas para trabajar con datos reales, como la entrada de datos a través de formularios de empleados y tareas.
+
+Una vez completada gran parte del back-end, se comenzó con el desarrollo del front-end con el objetivo de crear una interfaz de usuario sencilla e intuitiva.
+
+El primer paso fue la construcción de un menú de navegación que permitiera desplazarse entre las diferentes páginas de la aplicación. Este menú de navegación se insertó como un archivo externo en cada vista.
+
+Luego, se procedió a construir las vistas que componen la aplicación, como las de empleados, tareas, inicio de sesión, página principal y alertas. Para esto, se utilizaron tecnologías como HTML5, Bootstrap, JavaScript y jQuery. A continuación, se describen brevemente el funcionamiento de estas vistas:
+
+- **Inicio de Sesión (Login):** Esta página permite a los usuarios introducir sus credenciales para acceder a la aplicación según sus niveles de permisos. La recogida y tratamiento de los datos se realiza mediante un archivo PHP utilizando el método POST.
+
+- **Página Principal (Home):** Es la página a la que se redirige el usuario después de validar sus credenciales. Incluye un encabezado que permite navegar entre las diferentes páginas y representa la página de bienvenida al departamento.
+
+- **Vista de Empleados (EmployeesView):** Permite consultar la lista de todos los empleados de la empresa, incluyendo información básica de cada uno. Desde esta vista, se puede añadir, eliminar, editar empleados o acceder a las tareas asignadas.
+
+- **Crear Empleado (CreateEmployessView):** Contiene el formulario para registrar un nuevo empleado, incluyendo foto y currículum.
+
+- **Editar Empleado (EditEmployeesView):** Permite editar la información de un empleado previamente añadido. El formulario es similar al de creación pero con la información precargada.
+
+- **Vista de Tareas (TasksView):** Permite consultar la lista de todas las tareas del departamento, incluyendo información relevante como el empleado asignado. Si se accede desde EmployeesView, muestra las tareas correspondientes al empleado seleccionado.
+
+- **Crear Tarea (CreateTasks):** Disponible solo desde TasksView y requiere credenciales de jefe de departamento. Contiene un formulario para crear una nueva tarea.
+
+- **Editar Tarea (EditTasks):** Similar a la página de creación, pero se accede desde los botones "Editar" en los registros de tareas.
+
+- **Encabezado (Header):** Menú de navegación que agrupa los enlaces más relevantes de la aplicación.
+
+
 <br>
+
+
 
 <a name="estructura-de-archivos"></a>
 
