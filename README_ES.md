@@ -97,7 +97,13 @@ Esto puede ocurrir cuando se detecta un error en una fase previa y se corrige, o
 
 Las fases marcadas por este modelo se ajustan perfectamente al esquema propuesto en el proyecto, que son: análisis, diseño, codificación y pruebas. A excepción de la fase de mantenimiento, ya que el ciclo de vida de TaskTeam no contempla una fase de explotación.
 
+<div align="center">
+  <a>
 
+  ![Alt Text](https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ModeloDesarrollo.drawio.png)
+
+  </a>
+</div>
 
 <br>
 
