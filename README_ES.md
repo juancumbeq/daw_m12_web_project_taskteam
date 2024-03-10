@@ -273,6 +273,7 @@ M12_WebApp
 <br>
 
 
+
 <a name="capturas"></a>
 
 ## Capturas
@@ -284,6 +285,8 @@ M12_WebApp
 <a name="demo"></a>
 
 ## Demo
+
+<br>
 
 
 
@@ -300,3 +303,5 @@ Este proyecto está licenciado bajo la Licencia MIT. Para más detalles, consult
 <a name="autor"></a>
 
 ## Autor
+
+Este proyecto fue desarrollado por Juan Cumbe. Si tienes alguna pregunta o sugerencia sobre el proyecto, no dudes en contactarme a través de [e-mail](mailto:hello@juancumbe.com) o perfil en [Linkedin](https://www.linkedin.com/in/juancumbeq/). También puedes visitar mi sitio web [juancumbe.com](juancumbe.com). 😊
