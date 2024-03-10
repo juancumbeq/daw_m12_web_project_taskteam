@@ -24,8 +24,6 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 
 <br>
 
-
-
 ## Índice
 
 - [Instalación](#instalación)
@@ -43,8 +41,6 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 - [Autor](#autor)
 
 <br>
-
-
 
 <a name="instalación"></a>
 
@@ -82,8 +78,6 @@ Asegúraese de tener XAMPP instalado en tu computadora. Puedes descargarlo desde
 
 <br>
 
-
-
 <a name="modelo-de-desarrollo"></a>
 
 ## Modelo de Desarrollo
@@ -103,8 +97,6 @@ Las fases marcadas por este modelo se ajustan perfectamente al esquema propuesto
 </div>
 
 <br>
-
-
 
 <a name="tecnologías"></a>
 
@@ -147,10 +139,30 @@ Cada una de estas tecnologías ha desempeñado un papel clave en el desarrollo y
 <a name="funcionalidades"></a>
 
 ## Funcionalidades
-  incluir en este punto los casos de uso junto con los diagramas de casos de uso
 
+- ### Autenticación de Usuario
 
+  - Cada usuario del sistema cuenta con un correo y una contraseña que le permite acceder al aplicativo.
 
+- ### Gestión de Empleados
+
+  - Los managers de cada departamento son los únicos que disponen de permisos para acceder al listado de empleados, mediante este este módulo se permite lo siguiente:
+    - Adición de un empleado al sistema mediante formulario.
+    - Edición de datos de empleado.
+    - Borrado de registro de empleado.
+    - Visionado de tareas asignadas a un empleado en concreto.
+
+- ### Gestión de Tareas
+  - Los empleados y los managers de departamente tiene acceso a este módulo, sin embargo, las funciones permitidas son limitadas para el caso de los empleados.
+  - Permisos de managers de departamento:
+    - Adición de tareas correspondientes a un departamento mediante formulario.
+    - Edición de datos de tarea.
+    - Borrado de registro de tareas.
+    - Asignación de tareas a empleados.
+  - Permisos de empleados:
+    - Edición del estado de la tarea asignada.
+
+<br>
 
 Para conocer en detalle las funcionalidades del aplicativo podemos hacer referencia de los diagramas de casos de uso Los cuales, se emplean para representar los requisitos de la aplicación web desde la perspectiva de los distintos agentes que interactúan con ella, como usuarios, sistemas o aplicaciones externas. En este proyecto en particular, solo los empleados y los jefes de departamento tienen interacción con el aplicativo.
 
@@ -162,8 +174,6 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 </p>
 <br>
 
-
-
 <br>
 
 <a name="base-de-datos"></a>
@@ -171,8 +181,6 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 ## Base de datos
 
 <br>
-
-
 
 <a name="backend"></a>
 
@@ -242,8 +250,6 @@ TaskTeam - Juan Fernando Cumbe Quispi
 
 <br>
 
-
-
 <a name="estructura-de-archivos"></a>
 
 ## Estructura de Archivos
@@ -307,23 +313,17 @@ M12_WebApp
 
 <br>
 
-
-
 <a name="capturas"></a>
 
 ## Capturas
 
 <br>
 
-
-
 <a name="demo"></a>
 
 ## Demo
 
 <br>
-
-
 
 <a name="licencia"></a>
 
@@ -332,8 +332,6 @@ M12_WebApp
 Este proyecto está licenciado bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
 
 <br>
-
-
 
 <a name="autor"></a>
 
