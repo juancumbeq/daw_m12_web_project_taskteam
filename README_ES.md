@@ -35,7 +35,6 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 - [Frontend](#front-end)
 - [Estructura de Archivos](#estructura-de-archivos)
 - [Capturas](#capturas)
-- [Demo](#demo)
 - [Licencia](#licencia)
 - [Autor](#autor)
 
@@ -385,12 +384,6 @@ M12_WebApp
 <a name="capturas"></a>
 
 ## Capturas
-
-<br>
-
-<a name="demo"></a>
-
-## Demo
 
 <br>
 
