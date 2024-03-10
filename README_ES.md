@@ -157,8 +157,8 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 <br>
 
 <p align="center">
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoJefe.png?raw=true" width= "40%"title="Use Cases">&nbsp;&nbsp;&nbsp;
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoEmpleado.png?raw=true" width= "50%"title="Use Cases">&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoJefe.png?raw=true" width= "42%"title="Use Cases">&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoEmpleado.png?raw=true" width= "50%"title="Use Cases">
 </p>
 <br>
 
