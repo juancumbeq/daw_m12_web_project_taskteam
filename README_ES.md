@@ -181,12 +181,14 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 
 ## Base de datos
 
+
+
 <p align="center">
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ER.png?raw=true" width= "42%"title="Use Cases">&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ER.png?raw=true" width= "90%"title="Use Cases">&nbsp;&nbsp;&nbsp;
 </p>
 
 <p align="center">
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Relacional.png?raw=true" width= "50%"title="Use Cases">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Relacional.png?raw=true" width= "70%"title="Use Cases">
 </p>
 
 <br>
