@@ -99,9 +99,7 @@ Las fases marcadas por este modelo se ajustan perfectamente al esquema propuesto
 
 <div align="center">
   <a>
-
-  ![Alt Text](https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ModeloDesarrollo.drawio.png)
-
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ModeloDesarrollo.png?raw=true" height= "90%" title="Modelo de Desarrollo">
   </a>
 </div>
 
