@@ -175,23 +175,32 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 </p>
 <br>
 
-<br>
+
 
 <a name="base-de-datos"></a>
 
 ## Base de datos
 
+Uno de los pasos importante en el diseño ha sido el desarrollo de la base de datos que sirve para almacenar toda la información relevante de la aplicación.
 
+Una vez tenemos todas la entidades y los atributos que deseamos almacenar se diseña el diagrama entidad-relación:
 
+<br>
 <p align="center">
     <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ER.png?raw=true" width= "90%"title="Use Cases">&nbsp;&nbsp;&nbsp;
 </p>
+<br>
 
+
+Seguidamente, y haciendo uso del SGDB phpMyAdmin se crea la base de datos denominada: daw_m12_app. En esta base de datos se han definido todas las tablas del modelo relacional, las claves primarias y foráneas, y el resto de campos:
+
+<br>
 <p align="center">
     <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Relacional.png?raw=true" width= "70%"title="Use Cases">
 </p>
-
 <br>
+
+
 
 <a name="backend"></a>
 
