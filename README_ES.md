@@ -90,6 +90,7 @@ Esto puede ocurrir cuando se detecta un error en una fase previa y se corrige, o
 
 Las fases marcadas por este modelo se ajustan perfectamente al esquema propuesto en el proyecto, que son: análisis, diseño, codificación y pruebas. A excepción de la fase de mantenimiento, ya que el ciclo de vida de **TaskTeam** no contempla una fase de explotación.
 
+<br>
 <div align="center">
   <a>
     <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ModeloDesarrollo.png?raw=true" height= "90%" title="Modelo de Desarrollo">
@@ -180,18 +181,13 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 
 ## Base de datos
 
-
-
-
-
-
 <p align="center">
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoJefe.png?raw=true" width= "42%"title="Use Cases">&nbsp;&nbsp;&nbsp;
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoEmpleado.png?raw=true" width= "50%"title="Use Cases">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ER.png?raw=true" width= "42%"title="Use Cases">&nbsp;&nbsp;&nbsp;
 </p>
 
-
-
+<p align="center">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Relacional.png?raw=true" width= "50%"title="Use Cases">
+</p>
 
 <br>
 
