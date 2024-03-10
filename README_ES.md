@@ -140,11 +140,11 @@ Cada una de estas tecnologías ha desempeñado un papel clave en el desarrollo y
 
 ## Funcionalidades
 
-- ### Autenticación de Usuario
+- #### Autenticación de Usuario
 
   - Cada usuario del sistema cuenta con un correo y una contraseña que le permite acceder al aplicativo.
 
-- ### Gestión de Empleados
+- #### Gestión de Empleados
 
   - Los managers de cada departamento son los únicos que disponen de permisos para acceder al listado de empleados, mediante este este módulo se permite lo siguiente:
     - Adición de un empleado al sistema mediante formulario.
@@ -152,7 +152,7 @@ Cada una de estas tecnologías ha desempeñado un papel clave en el desarrollo y
     - Borrado de registro de empleado.
     - Visionado de tareas asignadas a un empleado en concreto.
 
-- ### Gestión de Tareas
+- #### Gestión de Tareas
   - Los empleados y los managers de departamente tiene acceso a este módulo, sin embargo, las funciones permitidas son limitadas para el caso de los empleados.
   - Permisos de managers de departamento:
     - Adición de tareas correspondientes a un departamento mediante formulario.
