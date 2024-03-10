@@ -170,8 +170,8 @@ Para conocer en detalle las funcionalidades del aplicativo podemos hacer referen
 <br>
 
 <p align="center">
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoJefe.png?raw=true" width= "42%"title="Use Cases">&nbsp;&nbsp;&nbsp;
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoEmpleado.png?raw=true" width= "50%"title="Use Cases">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoJefe.png?raw=true" width= "42%" title="Use Cases">&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoEmpleado.png?raw=true" width= "50%" title="Use Cases">
 </p>
 <br>
 
@@ -187,7 +187,7 @@ Una vez tenemos todas la entidades y los atributos que deseamos almacenar se dis
 
 <br>
 <p align="center">
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ER.png?raw=true" width= "90%"title="Use Cases">&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ER.png?raw=true" width= "90%" title="Diagrama ER">&nbsp;&nbsp;&nbsp;
 </p>
 <br>
 
@@ -196,7 +196,7 @@ Seguidamente, y haciendo uso del SGDB phpMyAdmin se crea la base de datos denomi
 
 <br>
 <p align="center">
-    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Relacional.png?raw=true" width= "70%"title="Use Cases">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Relacional.png?raw=true" width= "70%" title="Diagrama relacional">
 </p>
 <br>
 
@@ -220,12 +220,12 @@ A lo largo del desarrollo del back-end se detectaron deficiencias en las clases 
 
 A continuación se mencionan las principales clases que manejan el grueso de los datos del aplicativo:
 
-- Clase UserModel (modelo de usuarios): la clase UserModel recibe los datos del controlador LoginController y utiliza la propiedad `$conexion` para establecer contacto con la base de datos correspondiente.
+- **Clase UserModel (modelo de usuarios)**: la clase UserModel recibe los datos del controlador LoginController y utiliza la propiedad `$conexion` para establecer contacto con la base de datos correspondiente.
 
   - `verificarCredenciales()`: Este método inserta las credenciales del usuario dentro de las sentencias SQL que le permiten autenticar al usuario. Retorna los datos correspondientes en función de los resultados de las consultas.
 
 
-- Clase EmployeeController (controlador de empleados): el controlador EmployeeController se encarga de gestionar el CRUD de empleados, es decir, de la lectura, creación, actualización y eliminación de empleados. Requiere permisos como jefe de departamento para acceder a la vista correspondiente y hacer uso del controlador. Utiliza un objeto `employeesModel` para establecer conexión con el modelo de empleados.
+- **Clase EmployeeController (controlador de empleados)**: el controlador EmployeeController se encarga de gestionar el CRUD de empleados, es decir, de la lectura, creación, actualización y eliminación de empleados. Requiere permisos como jefe de departamento para acceder a la vista correspondiente y hacer uso del controlador. Utiliza un objeto `employeesModel` para establecer conexión con el modelo de empleados.
 
   - `CreateEmployees()`: Recibe los datos del formulario de la vista dentro de un array y los guarda en el modelo. Si no hay errores en el proceso de creación, redirige al usuario hacia la página de la lista de empleados.
 
@@ -240,7 +240,7 @@ A continuación se mencionan las principales clases que manejan el grueso de los
   - `DeleteEmployees()`: Mediante el uso de un identificador, ejecuta el borrado de un empleado en la base de datos.
 
 
-- Clase EmployeesModel (modelo de empleados): la clase EmployeesModel actúa sobre la base de datos ejecutando las sentencias SQL correspondientes.
+- **Clase EmployeesModel (modelo de empleados)**: la clase EmployeesModel actúa sobre la base de datos ejecutando las sentencias SQL correspondientes.
 
   - `CreateEmployeesModel()`: Recibe la información del empleado que necesita ser creado y gestiona el renombrado y copiado de los archivos subidos al formulario. Retorna true si la inserción se realiza satisfactoriamente.
 
@@ -255,7 +255,7 @@ A continuación se mencionan las principales clases que manejan el grueso de los
   - `DeleteEmployeeModel()`: Se encarga del borrado del registro y de los archivos relevantes a un empleado en concreto.
 
 
-- Clase TasksController (controlador de tareas): el controlador TasksController gestiona el CRUD de las tareas. Los empleados pueden acceder a los métodos de lectura y actualización, pero solo los usuarios con permisos suficientes pueden crear o eliminar tareas. Utiliza un objeto `tasksModel` para establecer conexión con el modelo de tareas.
+- **Clase TasksController (controlador de tareas)**: el controlador TasksController gestiona el CRUD de las tareas. Los empleados pueden acceder a los métodos de lectura y actualización, pero solo los usuarios con permisos suficientes pueden crear o eliminar tareas. Utiliza un objeto `tasksModel` para establecer conexión con el modelo de tareas.
 
   - `CreateTasks()`: Recibe los datos del formulario y los envía al modelo para construir y ejecutar una sentencia SQL. Si no hay errores, redirige al usuario a la lista de tareas.
 
@@ -272,7 +272,7 @@ A continuación se mencionan las principales clases que manejan el grueso de los
   - `DeleteTasks()`: Elimina una tarea de la base de datos.
 
 
-- Clase TasksModel (modelo de tareas): la clase TasksModel ejecuta las sentencias SQL sobre la base de datos correspondiente al CRUD.
+- **Clase TasksModel (modelo de tareas)**: la clase TasksModel ejecuta las sentencias SQL sobre la base de datos correspondiente al CRUD.
 
   - `CreateTasksModel()`: Recibe los datos del controlador y los utiliza en la sentencia SQL de creación de tarea.
 
@@ -289,6 +289,13 @@ A continuación se mencionan las principales clases que manejan el grueso de los
   - `DeleteTasksModel()`: Elimina una tarea de la base de datos.
 
 <br>
+<p align="center">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Clases.png?raw=true" width= "90%" title="Diagrama de clases">
+</p>
+
+<br>
+
+
 
 <a name="backend"></a>
 
