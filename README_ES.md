@@ -32,7 +32,6 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 - [Modelo de Desarrollo](#modelo-de-desarrollo)
 - [Tecnologías empleadas](#tecnologías)
 - [Funcionalidades](#funcionalidades)
-  incluir en este punto los casos de uso junto con los diagramas de casos de uso
 - [Base de Datos](#base-de-datos)
 - [Backend](#back-end)
   incluir diagrama de clases
@@ -89,13 +88,13 @@ Asegúraese de tener XAMPP instalado en tu computadora. Puedes descargarlo desde
 
 ## Modelo de Desarrollo
 
-Para establecer el ciclo de vida de TaskTeam, se ha optado por el modelo en cascada con realimentación. Esta elección se basa tras considerar que este modelo es el más adecuado para el alcance y tamaño del proyecto. Aunque en desarrollos muy grandes puede resultar complicado alcanzar el éxito debido a las numerosas dependencias que se generan, para proyectos más modestos se ha demostrado como uno de los más eficientes debido a su aplicación sencilla.
+Para establecer el ciclo de vida de **TaskTeam**, se ha optado por el modelo en cascada con realimentación. Esta elección se basa tras considerar que este modelo es el más adecuado para el alcance y tamaño del proyecto. Aunque en desarrollos muy grandes puede resultar complicado alcanzar el éxito debido a las numerosas dependencias que se generan, para proyectos más modestos se ha demostrado como uno de los más eficientes debido a su aplicación sencilla.
 
 El modelo en cascada con realimentación consta de una serie de fases que se completan de forma secuencial, pero cada una de ellas puede retroalimentar a la anterior en caso de ser necesario.
 
 Esto puede ocurrir cuando se detecta un error en una fase previa y se corrige, o cuando se produce un cambio en alguna condición del entorno que requiere ajustes.
 
-Las fases marcadas por este modelo se ajustan perfectamente al esquema propuesto en el proyecto, que son: análisis, diseño, codificación y pruebas. A excepción de la fase de mantenimiento, ya que el ciclo de vida de TaskTeam no contempla una fase de explotación.
+Las fases marcadas por este modelo se ajustan perfectamente al esquema propuesto en el proyecto, que son: análisis, diseño, codificación y pruebas. A excepción de la fase de mantenimiento, ya que el ciclo de vida de **TaskTeam** no contempla una fase de explotación.
 
 <div align="center">
   <a>
@@ -148,8 +147,26 @@ Cada una de estas tecnologías ha desempeñado un papel clave en el desarrollo y
 <a name="funcionalidades"></a>
 
 ## Funcionalidades
+  incluir en este punto los casos de uso junto con los diagramas de casos de uso
 
-Detailed explanation on how to use the project. Includes examples, basic commands, and any other relevant information for users.
+
+
+
+Para conocer en detalle las funcionalidades del aplicativo podemos hacer referencia de los diagramas de casos de uso Los cuales, se emplean para representar los requisitos de la aplicación web desde la perspectiva de los distintos agentes que interactúan con ella, como usuarios, sistemas o aplicaciones externas. En este proyecto en particular, solo los empleados y los jefes de departamento tienen interacción con el aplicativo.
+
+<br>
+
+<p align="center">
+  <a href="https://github.com/juancumbeq/DAM_M08_Multimedia_and_Mobile_Devices_Programming/blob/main/Android/Activities%20%26%20Layouts" target="_blank">
+    <img src="https://github.com/juancumbeq/DAM_M08_Multimedia_and_Mobile_Devices_Programming/blob/main/Android/Activities%20%26%20Layouts/Images/LinearLayout_Phone.png?raw=true" width= "23%"title="Linear Layout">&nbsp;&nbsp;&nbsp;
+  </a>
+  <a href="https://github.com/juancumbeq/DAM_M08_Multimedia_and_Mobile_Devices_Programming/blob/main/Android/Activities%20%26%20Layouts" target="_blank">
+    <img src="https://github.com/juancumbeq/DAM_M08_Multimedia_and_Mobile_Devices_Programming/blob/main/Android/Activities%20%26%20Layouts/Images/FrameLayout_Phone.png?raw=true" width= "23%"title="Linear Layout">&nbsp;&nbsp;&nbsp;
+  </a>
+</p>
+<br>
+
+
 
 <br>
 
