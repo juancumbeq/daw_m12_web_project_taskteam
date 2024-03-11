@@ -26,6 +26,7 @@ In summary, this web application aims to provide a comprehensive and efficient s
 
 ## Index
 
+- [Demo](#demo)
 - [Installation](#installation)
 - [Development Model](#development-model)
 - [Technologies Used](#technologies-used)
@@ -37,6 +38,16 @@ In summary, this web application aims to provide a comprehensive and efficient s
 - [Screenshots](#screenshots)
 - [License](#license)
 - [Author](#author)
+
+<br>
+
+<a name="demo"></a>
+
+## Demo
+
+Click here to try this application: [Link](https://juancumbe.com/M12_WebApp/index.php)
+
+![](https://img.shields.io/badge/Server%10under%20maintenance-yellow?)
 
 <br>
 
@@ -480,4 +491,3 @@ This project is licensed under the MIT License. For more details, see the [LICEN
 ## Author
 
 This project was developed by Juan Cumbe. If you have any questions or suggestions about the project, feel free to contact me via [e-mail](mailto:hello@juancumbe.com) or my [Linkedin](https://www.linkedin.com/in/juancumbeq/) profile. You can also visit my website [juancumbe.com](juancumbe.com). 😊
-
