@@ -400,69 +400,69 @@ M12_WebApp
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_LoginError.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Home Manager</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_HomeManager.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Lista Empleados</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaEmpleados.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Añadir Empleado</p>
   <p align="center">
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_AñadirEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Lista de Tareas de un Empleado</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaTareasEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Editar Empleado</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_EditarEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Borrar Empleado</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_BorrarEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Lista de Tareas del Departamento</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaTareasDepartamento.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Añadir Tarea</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_AñadirTarea.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Editar Tarea</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_EditarTarea.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Borrar Tarea</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_BorrarTarea.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Home Empleado</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_HomeEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Lista de Tareas desde Vista de Empleado</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaTareasVistaEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
 
-  <p align="center" style="font-style: italic;">Login Error</p>
+  <p align="center" style="font-style: italic;">Editar Tarea desde Vista de Empleado</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_EditarTareaVistaEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
 </details>
 <br>
