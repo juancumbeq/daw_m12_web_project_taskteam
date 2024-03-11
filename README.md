@@ -211,11 +211,11 @@ Throughout the development of the back-end, deficiencies were detected in the in
 
 Below are mentioned the main classes that handle the bulk of the application data:
 
-- **UserModel Class (user model)**: The UserModel class receives data from the LoginController controller and uses the `$conexion` property to establish contact with the corresponding database.
+- **UserModel Class**: The UserModel class receives data from the LoginController controller and uses the `$conexion` property to establish contact with the corresponding database.
 
   - `verifyCredentials()`: This method inserts the user's credentials into SQL statements that allow the user to authenticate. It returns the corresponding data based on the results of the queries.
 
-- **EmployeeController Class (employee controller)**: The EmployeeController controller is responsible for managing the CRUD (Create, Read, Update, Delete) of employees. It requires permissions like department head to access the corresponding view and make use of the controller. It uses an `employeesModel` object to establish a connection with the employee model.
+- **EmployeeController Class**: The EmployeeController controller is responsible for managing the CRUD (Create, Read, Update, Delete) of employees. It requires permissions like department head to access the corresponding view and make use of the controller. It uses an `employeesModel` object to establish a connection with the employee model.
 
   - `CreateEmployees()`: It receives data from the view form within an array and saves it in the model. If there are no errors in the creation process, it redirects the user to the list of employees page.
 
@@ -229,7 +229,7 @@ Below are mentioned the main classes that handle the bulk of the application dat
 
   - `DeleteEmployees()`: By using an identifier, it executes the deletion of an employee in the database.
 
-- **EmployeesModel Class (employee model)**: The EmployeesModel class acts on the database by executing the corresponding SQL statements.
+- **EmployeesModel Class**: The EmployeesModel class acts on the database by executing the corresponding SQL statements.
 
   - `CreateEmployeesModel()`: It receives the information of the employee that needs to be created and manages the renaming and copying of the files uploaded to the form. It returns true if the insertion is successful.
 
@@ -243,7 +243,7 @@ Below are mentioned the main classes that handle the bulk of the application dat
 
   - `DeleteEmployeeModel()`: It takes care of deleting the record and relevant files of a specific employee.
 
-- **TasksController Class (task controller)**: The TasksController controller manages the CRUD of tasks. Employees can access the read and update methods, but only users with sufficient permissions can create or delete tasks. It uses a `tasksModel` object to establish a connection with the task model.
+- **TasksController Class**: The TasksController controller manages the CRUD of tasks. Employees can access the read and update methods, but only users with sufficient permissions can create or delete tasks. It uses a `tasksModel` object to establish a connection with the task model.
 
   - `CreateTasks()`: It receives data from the form and sends it to the model to build and execute an SQL statement. If there are no errors, it redirects the user to the tasks list.
 
@@ -259,7 +259,7 @@ Below are mentioned the main classes that handle the bulk of the application dat
 
   - `DeleteTasks()`: It deletes a task from the database.
 
-- **TasksModel Class (task model)**: The TasksModel class executes SQL statements on the corresponding database for CRUD operations.
+- **TasksModel Class**: The TasksModel class executes SQL statements on the corresponding database for CRUD operations.
 
   - `CreateTasksModel()`: It receives data from the controller and uses it in the task creation SQL statement.
 
