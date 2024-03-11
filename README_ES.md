@@ -437,7 +437,7 @@ M12_WebApp
 
   <p align="center" style="font-style: italic;">Añadir Tarea</p>
   <p align="center">
-      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_AñadirTarea.png?raw=true" width= "90%" title="Captura">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_A%C3%B1adirTarea.png?raw=true" width= "90%" title="Captura">
   </p>
 
   <p align="center" style="font-style: italic;">Editar Tarea</p>
