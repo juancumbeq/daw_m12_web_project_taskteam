@@ -60,7 +60,7 @@ class LoginController {
       }
       
       // Redireccionamos al archivo index_main = HOME
-      header("Location:../index_main.php");
+      header("Location:../index.php");
     }
     else {
       // Si hay error, retornamos un mensaje

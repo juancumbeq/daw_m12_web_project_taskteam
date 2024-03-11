@@ -2,7 +2,8 @@
 
 // INICIO DE SESSIÓN PARA TENER LAS VARIABLES DISPONIBLES EN TODOS LOS ARCHIVOS
 session_start();
-$url_base = "http://localhost/DAW_FP/M12_WebApp/";
+//$url_base = "http://localhost/DAW_FP/M12_WebApp/";
+$url_base = "http://juancumbe.com/M12_WebApp/";
 
 
 // VERIFICAMOS QUE EXISTA UNA SESSIÓN CREADA ANTES DE CARGAR EL HEADER
@@ -46,7 +47,7 @@ if (!isset($_SESSION["mail"])) {
       <ul class="nav navbar-nav">
 
         <li class="nav-item">
-          <a class="nav-link active" href="<?php echo $url_base ?>index_main.php" aria-current="page">Home<span
+          <a class="nav-link active" href="<?php echo $url_base ?>index.php" aria-current="page">Home<span
               class="visually-hidden">(current)</span></a>
         </li>
 
