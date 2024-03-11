@@ -47,6 +47,11 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 
 Haz click aquí para probar la aplicación: [Link](https://juancumbe.com/M12_WebApp/index.php)
 
+Credenciales
+
+- Usuario: dpto_desarrollo@gmail.com
+- Contraseña: desarrollo
+
 ![](https://img.shields.io/badge/Sevidor%20en%20mantenimiento-yellow?)
 
 <br>

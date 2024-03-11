@@ -47,6 +47,10 @@ In summary, this web application aims to provide a comprehensive and efficient s
 
 Click here to try this application: [Link](https://juancumbe.com/M12_WebApp/index.php)
 
+Credentials
+- User: dpto_desarrollo@gmail.com
+- Password: desarrollo
+
 ![](https://img.shields.io/badge/Server%20under%20maintenance-yellow?)
 
 <br>
