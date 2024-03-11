@@ -280,6 +280,7 @@ A continuación se mencionan las principales clases que manejan el grueso de los
 <br>
 En la siguiente imagen podemos ver el diagrama de clases resultante:
 <br>
+<br>
 
 <p align="center">
     <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Clases.png?raw=true" width= "90%" title="Diagrama de clases">
