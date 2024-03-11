@@ -278,7 +278,6 @@ Below are mentioned the main classes that handle the bulk of the application dat
 <br>
 In the following image, we can see the resulting class diagram:
 <br>
-
 <p align="center">
     <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Clases.png?raw=true" width= "90%" title="Class Diagram">
 </p>
