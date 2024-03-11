@@ -195,7 +195,7 @@ Seguidamente, y haciendo uso del SGDB phpMyAdmin se crea la base de datos denomi
 </p>
 <br>
 
-<a name="backend"></a>
+<a name="back-end"></a>
 
 ## Back-end
 
@@ -280,13 +280,14 @@ A continuación se mencionan las principales clases que manejan el grueso de los
 <br>
 En la siguiente imagen podemos ver el diagrama de clases resultante:
 <br>
+
 <p align="center">
     <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Clases.png?raw=true" width= "90%" title="Diagrama de clases">
 </p>
 
 <br>
 
-<a name="backend"></a>
+<a name="front-end"></a>
 
 ## Front-end
 
@@ -465,6 +466,7 @@ M12_WebApp
       <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_EditarTareaVistaEmpleado.png?raw=true" width= "90%" title="Captura">
   </p>
 </details>
+
 <br>
 
 <a name="licencia"></a>

@@ -18,15 +18,25 @@ In summary, this web application aims to provide a comprehensive and efficient s
 
 <br>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Project%20Status-Finished-brightgreen"/>
+</p>
+
+<br>
+
 ## Index
 
-1. [Installation](#installation)
-2. [Technology Stack](#stack)
-3. [Usage](#usage)
-4. [File Structure](#file-structure)
-5. [Contribution](#contribution)
-6. [Credits](#credits)
-7. [License](#license)
+- [Installation](#installation)
+- [Development Model](#development-model)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Database](#database)
+- [Backend](#backend)
+- [Frontend](#frontend)
+- [File Structure](#file-structure)
+- [Screenshots](#screenshots)
+- [License](#license)
+- [Author](#author)
 
 <br>
 
@@ -66,9 +76,30 @@ Make sure you have XAMPP installed on your computer. You can download it from [t
 
 <br>
 
-<a name="stack"></a>
+<a name="modelo-de-desarrollo"></a>
 
-## Technology Stack
+## Development Model
+
+To establish the life cycle of **TaskTeam**, the waterfall model with feedback has been chosen. This decision is based on considering this model as the most suitable for the scope and size of the project. Although it may be challenging to achieve success in very large developments due to the numerous dependencies that arise, for more modest projects, it has proven to be one of the most efficient due to its straightforward application.
+
+The waterfall model with feedback consists of a series of phases that are completed sequentially, but each phase can provide feedback to the previous one if necessary.
+
+This can occur when an error is detected in a previous phase and corrected, or when a change in some environmental condition requires adjustments.
+
+The phases marked by this model fit perfectly into the proposed project scheme, which are: analysis, design, coding, and testing. With the exception of the maintenance phase, as the life cycle of **TaskTeam** does not include an exploitation phase.
+
+<br>
+<div align="center">
+  <a>
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ModeloDesarrollo.png?raw=true" height= "90%" title="Development Model">
+  </a>
+</div>
+
+<br>
+
+<a name="technologies-used"></a>
+
+## Technologies Used
 
 In TaskTeam, various technologies have been used for its development and operation. Most of them have been widely used throughout the training cycle. Below, a brief description is provided for what each of them has been used for:
 
@@ -102,11 +133,187 @@ Each of these technologies has played a key role in the development and operatio
 
 <br>
 
-<a name="usage"></a>
+<a name="features"></a>
 
-## Usage
+## Features
 
-Explicación detallada sobre cómo utilizar el proyecto. Incluye ejemplos, comandos básicos, y cualquier otra información relevante para los usuarios.
+- #### User Authentication
+
+  - Each system user has an email and a password that allows them to access the application.
+
+- #### Employee Management
+
+  - Department managers are the only ones with permissions to access the employee list. Through this module, the following is allowed:
+    - Addition of an employee to the system via form.
+    - Editing employee data.
+    - Deletion of employee record.
+    - Viewing tasks assigned to a specific employee.
+
+- #### Task Management
+  - Employees and department managers have access to this module, however, the permitted functions are limited for employees.
+  - Department manager permissions:
+    - Addition of tasks corresponding to a department via form.
+    - Editing task data.
+    - Deletion of task record.
+    - Assignment of tasks to employees.
+  - Employee permissions:
+    - Editing the status of the assigned task.
+
+<br>
+
+To learn in detail about the functionalities of the application, we can refer to the use case diagrams. These are used to represent the requirements of the web application from the perspective of the different agents that interact with it, such as users, systems, or external applications. In this particular project, only employees and department heads interact with the application.
+
+<br>
+
+<p align="center">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoJefe.png?raw=true" width= "42%" title="Use Cases">&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_CasosUsoEmpleado.png?raw=true" width= "50%" title="Use Cases">
+</p>
+<br>
+
+<a name="database"></a>
+
+## Database
+
+One of the important steps in the design process has been the development of the database, which serves to store all the relevant information of the application.
+
+Once we have all the entities and attributes that we want to store, the entity-relationship diagram is designed:
+
+<br>
+<p align="center">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_ER.png?raw=true" width= "90%" title="ER Diagram">&nbsp;&nbsp;&nbsp;
+</p>
+<br>
+
+Next, and using the phpMyAdmin DBMS, the database named "daw_m12_app" is created. In this database, all the tables of the relational model, primary and foreign keys, and the rest of the fields have been defined:
+
+<br>
+<p align="center">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Relacional.png?raw=true" width= "70%" title="Relational Diagram">
+</p>
+<br>
+
+<a name="backend"></a>
+
+## Back-end
+
+The development of the Back-end was carried out following the MVC pattern. Classes for controllers and models were implemented, defined in the analysis phase.
+
+The implementation process of the back-end of the main parts of the application came as a result of having the front-end structured and minimally functional. This allowed handling real data and understanding their flow for error detection and resolution.
+
+To better understand the details of the classes and their methods, it is important to note that controllers and models handle all back-end operations, implemented in PHP. The model is responsible for all interaction with the database, while the controller handles the reception, management, and sending of data to and from the model and the view.
+
+In the coding of the controllers, objects of the corresponding models are also instantiated as required to interact with the database. This way, only the controller can communicate with the model, providing greater security to the application.
+
+Finally, the model classes are coded, defining all the queries required to return the information requested by the controller.
+
+Throughout the development of the back-end, deficiencies were detected in the initially planned classes, as new needs and opportunities for code optimization and reuse emerged during the application construction.
+
+Below are mentioned the main classes that handle the bulk of the application data:
+
+- **UserModel Class (user model)**: The UserModel class receives data from the LoginController controller and uses the `$conexion` property to establish contact with the corresponding database.
+
+  - `verifyCredentials()`: This method inserts the user's credentials into SQL statements that allow the user to authenticate. It returns the corresponding data based on the results of the queries.
+
+- **EmployeeController Class (employee controller)**: The EmployeeController controller is responsible for managing the CRUD (Create, Read, Update, Delete) of employees. It requires permissions like department head to access the corresponding view and make use of the controller. It uses an `employeesModel` object to establish a connection with the employee model.
+
+  - `CreateEmployees()`: It receives data from the view form within an array and saves it in the model. If there are no errors in the creation process, it redirects the user to the list of employees page.
+
+  - `FixedDataCreateForm()`: Before creating a new employee, it is necessary to obtain specific information from the form, such as department and position dropdowns. This method requests the relevant information from the model using the department identifier.
+
+  - `ReadEmployees()`: It makes a call to the corresponding method of the model to obtain an array with all the information of the company's employees.
+
+  - `UpdateEmployees()`: Similar to the `CreateEmployees()` method, but it requires an additional parameter: the employee identifier. This allows the model to update the corresponding record.
+
+  - `FixedDataUpdateForm()`: Similar to `FixedDataCreateForm()`, but used to update employee information.
+
+  - `DeleteEmployees()`: By using an identifier, it executes the deletion of an employee in the database.
+
+- **EmployeesModel Class (employee model)**: The EmployeesModel class acts on the database by executing the corresponding SQL statements.
+
+  - `CreateEmployeesModel()`: It receives the information of the employee that needs to be created and manages the renaming and copying of the files uploaded to the form. It returns true if the insertion is successful.
+
+  - `FixedDataCreateFormEmployees()`: It obtains the positions and department information to facilitate the creation of a new employee.
+
+  - `ReadEmployees()`: It extracts all the information of the employees from the database and delivers it to the controller.
+
+  - `UpdateEmployees()`: It inserts the new employee information to update the corresponding record, managing the deletion of obsolete files and transferring the updated versions.
+
+  - `FixedDataUpdateFormModel()`: It uses the employee identifier to obtain all its information and display it in the update form.
+
+  - `DeleteEmployeeModel()`: It takes care of deleting the record and relevant files of a specific employee.
+
+- **TasksController Class (task controller)**: The TasksController controller manages the CRUD of tasks. Employees can access the read and update methods, but only users with sufficient permissions can create or delete tasks. It uses a `tasksModel` object to establish a connection with the task model.
+
+  - `CreateTasks()`: It receives data from the form and sends it to the model to build and execute an SQL statement. If there are no errors, it redirects the user to the tasks list.
+
+  - `FixedDataCreateForm()`: It obtains relevant department data to create a task.
+
+  - `ReadTasksDptoGeneral()`: It reads all tasks corresponding to a department.
+
+  - `ReadTasksDptoSpecific()`: Similar to the previous one but for tasks assigned to a specific employee.
+
+  - `UpdateTasks()`: It receives data from the form and sends it to the model to update a task.
+
+  - `FixedDataUpdateForm()`: It obtains all relevant information of a task from the model to fill the form by default.
+
+  - `DeleteTasks()`: It deletes a task from the database.
+
+- **TasksModel Class (task model)**: The TasksModel class executes SQL statements on the corresponding database for CRUD operations.
+
+  - `CreateTasksModel()`: It receives data from the controller and uses it in the task creation SQL statement.
+
+  - `FixedDataCreateFormModel()`: It obtains relevant information of the department, such as the list of available employees.
+
+  - `ReadTasksDptoGeneralModel()`: It obtains data of all tasks of a department.
+
+  - `ReadTasksDptoSpecificModel()`: It retrieves all data of tasks of a specific employee.
+
+  - `UpdateTasks()`: It receives data to be updated and executes the corresponding SQL statement.
+
+  - `FixedDataUpdateFormModel()`: It retrieves information of a specific task to display it in the update form.
+
+  - `DeleteTasksModel()`: It deletes a task from the database.
+
+<br>
+In the following image, we can see the resulting class diagram:
+<br>
+
+<p align="center">
+    <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Diagrama_Clases.png?raw=true" width= "90%" title="Class Diagram">
+</p>
+
+<br>
+
+<a name="front-end"></a>
+
+## Front-end
+
+During the development of the back-end, work on the front-end also began, although initially it was not on a large scale. The focus was on implementing basic functionalities to work with real data, such as data entry through employee and task forms.
+
+Once a significant part of the back-end was completed, front-end development started with the aim of creating a simple and intuitive user interface.
+
+The first step was the construction of a navigation menu that allowed navigation between the different pages of the application. This navigation menu was inserted as an external file in each view.
+
+Then, the views that make up the application were built, such as those for employees, tasks, login, homepage, and alerts. Technologies such as HTML5, Bootstrap, JavaScript, and jQuery were used for this purpose. The functioning of these views is briefly described below:
+
+- **Login:** This page allows users to enter their credentials to access the application according to their permission levels. Data collection and processing are done through a PHP file using the POST method.
+
+- **Home:** This is the page where the user is redirected after validating their credentials. It includes a header that allows navigation between the different pages and represents the welcome page to the department.
+
+- **EmployeesView:** Allows viewing the list of all employees in the company, including basic information for each. From this view, employees can be added, deleted, edited, or access assigned tasks.
+
+- **CreateEmployeesView:** Contains the form to register a new employee, including photo and resume.
+
+- **EditEmployeesView:** Allows editing the information of a previously added employee. The form is similar to the creation form but with preloaded information.
+
+- **TasksView:** Allows viewing the list of all department tasks, including relevant information such as the assigned employee. If accessed from EmployeesView, it displays the tasks corresponding to the selected employee.
+
+- **CreateTasks:** Available only from TasksView and requires department head credentials. Contains a form to create a new task.
+
+- **EditTasks:** Similar to the creation page, but accessed from the "Edit" buttons in the task records.
+
+- **Header:** Navigation menu that groups the most relevant links of the application.
 
 <br>
 
@@ -114,30 +321,163 @@ Explicación detallada sobre cómo utilizar el proyecto. Incluye ejemplos, coman
 
 ## File Structure
 
-Descripción de la estructura de archivos del proyecto, especialmente útil para proyectos más grandes. Puedes proporcionar una descripción breve de cada archivo o directorio importante.
+Representation of the project's file structure:
+
+```
+M12_WebApp
+│
+├─ assets
+│  └─ jefes_dptos_docs
+│     ├─ JuanCarlos_GonzalezRuiz_foto.jpg
+│     ├─ LauraMaria_MartinezPerez_foto.jpg
+│     └─ LuisAlejandro_SanchezLopez_foto.jpg
+│
+├─ login
+│  ├─ controller
+│  │  └─ LoginController.php
+│  ├─ model
+│  │  └─ UserModel.php
+│  ├─ view
+│  │   └─ LoginView.php
+│  ├─ login.php
+│  ├─ logout.php
+│
+├─ secciones
+│  ├─ employees
+│  │  ├─ empleados_docs
+│  │  ├─ controllers
+│  │  │  └─ EmployeesController.php
+│  │  ├─ model
+│  │  │  └─ EmployeesModel.php
+│  │  ├─ view
+│  │  │  ├─ CreateEmployeesView.php
+│  │  │  ├─ EditEmployeesView.php
+│  │  │  └─ EmployeesView.php
+│  │  ├─ create_employees.php
+│  │  ├─ edit_employees.php
+│  │  └─ index_employees.php
+│  │
+│  └─ tasks
+│     ├─ controllers
+│     │  └─ TasksController.php
+│     ├─ model
+│     │  └─ TasksModel.php
+│     ├─ view
+│     │   ├─ CreateTasksView.php
+│     │   ├─ EditTasksView.php
+│     │   └─ TasksView.php
+│     ├─ create_tasks.php
+│     ├─ edit_tasks.php
+│     ├─ index_tasks.php
+│
+├─ templates
+│   ├─ footer.php
+│   └─ header.php
+│
+├─ bd.php
+└─ index_main.php
+```
 
 <br>
 
-<a name="contributing"></a>
+<a name="screenshots"></a>
 
-## Contribution
-
-Instrucciones para contribuir al proyecto, incluyendo cómo reportar problemas, enviar propuestas de mejora, y directrices para hacer cambios en el código.
+## Screenshots
 
 <br>
+<details>
+  <summary>See images</summary>
+  <br>
 
-<a name="credits"></a>
+  <p align="center" style="font-style: italic;">Login</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_Login.png?raw=true" width= "90%" title="Captura">
+  </p>
+  
+  <p align="center" style="font-style: italic;">Error Login</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_LoginError.png?raw=true" width= "90%" title="Captura">
+  </p>
 
-## Credits
+  <p align="center" style="font-style: italic;">Manager Homepage</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_HomeManager.png?raw=true" width= "90%" title="Captura">
+  </p>
 
-Agradecimientos a las personas o proyectos que han contribuido de alguna manera al desarrollo de tu proyecto. También puedes incluir enlaces a recursos útiles que hayas utilizado.
+  <p align="center" style="font-style: italic;">Employee List</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaEmpleados.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Add Employee</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_AñadirEmpleado.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Employee Tasks List</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaTareasEmpleado.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Edit Employee</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_EditarEmpleado.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Delete Employee</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_BorrarEmpleado.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Departament Tasks Lists</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaTareasDepartamento.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Add Task</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_A%C3%B1adirTarea.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Editar Task</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_EditarTarea.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Delete Task</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_BorrarTarea.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Employee Homepage</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_HomeEmpleado.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Tasks Lists from Employee View</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_ListaTareasVistaEmpleado.png?raw=true" width= "90%" title="Captura">
+  </p>
+
+  <p align="center" style="font-style: italic;">Edit Task from Employee View</p>
+  <p align="center">
+      <img src="https://github.com/juancumbeq/daw_m12_web_project/blob/main/images/Captura_EditarTareaVistaEmpleado.png?raw=true" width= "90%" title="Captura">
+  </p>
+</details>
 
 <br>
 
 <a name="license"></a>
 
-## Licence
+## License
 
 This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
 <br>
+
+<a name="author"></a>
+
+## Author
+
+This project was developed by Juan Cumbe. If you have any questions or suggestions about the project, feel free to contact me via [e-mail](mailto:hello@juancumbe.com) or my [Linkedin](https://www.linkedin.com/in/juancumbeq/) profile. You can also visit my website [juancumbe.com](juancumbe.com). 😊
+
