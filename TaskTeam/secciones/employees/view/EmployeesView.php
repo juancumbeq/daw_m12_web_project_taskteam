@@ -41,11 +41,18 @@
                 <?php echo $registro['segundo_apellido'] ?>
               </td>
               <td>
-                <img width="80px" height="80px" src=" <?php echo "./empleados_docs/" . $registro['foto'] ?>"
+                <!-- Decode de url de nombre de arcchivo foto y cv -->
+                <?php 
+                  $url = $registro['foto'];
+                  $url_decoded = urldecode($url);
+                ?>
+                <img width="80px" height="80px" src=" <?php echo "./empleados_docs/" . $url_decoded ?>"
                   class="img-fluid rounded" alt="" />
               </td>
               <td>
-                <a href="<?php echo "./empleados_docs/" . $registro['CV'] ?>" target="_blank"><?php echo "CV_" . $registro['primer_nombre'] ?></a>
+                <a href="<?php echo "./empleados_docs/" . $registro['CV'] ?>" target="_blank">
+                  <?php echo "CV_" . $registro['primer_nombre'] ?>
+                </a>
               </td>
               <td>
                 <?php echo $registro['subc_nombre_puesto'] ?>

@@ -3,7 +3,7 @@
 // INICIO DE SESSIÓN PARA TENER LAS VARIABLES DISPONIBLES EN TODOS LOS ARCHIVOS
 session_start();
 //$url_base = "http://localhost/DAW_FP/m12_TaskTeam/";
-$url_base = "http://juancumbe.com/m12_TaskTeam/";
+$url_base = "http://juancumbe.com/TaskTeam/";
 
 
 // VERIFICAMOS QUE EXISTA UNA SESSIÓN CREADA ANTES DE CARGAR EL HEADER
