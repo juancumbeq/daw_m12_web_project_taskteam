@@ -36,7 +36,7 @@ if (!isset($_SESSION["mail"])) {
   <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
 
   <!-- Sweet Alert2 -->
-  <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
