@@ -80,12 +80,12 @@ Asegúraese de tener XAMPP instalado en tu computadora. Puedes descargarlo desde
 
 - **Transferencia de la Aplicación Web**:
 
-  - Copia los archivos de la aplicación web al directorio htdocs dentro del directorio de instalación de XAMPP. Por lo general, este directorio se encuentra en C:\xampp\htdocs en sistemas Windows o /Applications/XAMPP/htdocs en macOS. La ruta resultante debería ser: /Applications/XAMPP/xamppfiles/htdocs/DAW_FP/M12_WebApp/.
+  - Copia los archivos de la aplicación web al directorio htdocs dentro del directorio de instalación de XAMPP. Por lo general, este directorio se encuentra en C:\xampp\htdocs en sistemas Windows o /Applications/XAMPP/htdocs en macOS. La ruta resultante debería ser: /Applications/XAMPP/xamppfiles/htdocs/m12_TaskTeam/.
 
 - **Iniciar el Servidor Local**:
 
   - Vuelve al Panel de Control de XAMPP y haz clic en "Start" para iniciar los servicios de Apache y MySQL.
-  - Abre tu navegador web y visita [http://localhost/DAW_FP/M12_WebApp/index_main.php](http://localhost/DAW_FP/M12_WebApp/index_main.php)
+  - Abre tu navegador web y visita [http://localhost/m12_TaskTeam/index_main.php](http://localhost/m12_TaskTeam/index.php)
 
 - **Pruebas de Aplicación**:
   - Si todo se configuró correctamente, deberías poder ver la página de inicio de sesión de TaskTeam. ¡Felicidades! Has instalado con éxito tu aplicación web PHP en tu servidor local utilizando XAMPP. Ahora puedes comenzar a desarrollar y probar tu aplicación sin necesidad de una conexión a internet.
