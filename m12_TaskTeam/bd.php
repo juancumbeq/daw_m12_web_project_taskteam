@@ -16,6 +16,7 @@ $password = "Wyf0GB27";
 try {
   // EJECUTA UNA CONEXIÓN HACIA LA DATABASE
   $conexion = new PDO("mysql:host=$servidor; dbname=$baseDatos", $usuario, $password);
+  $conexion->exec("set names utf8mb4");
 } catch (Exception $ex) {
   
   // EN CASO DE ERROR SE MUESTRA UN MENSAJE POR PANTALLA

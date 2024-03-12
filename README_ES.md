@@ -47,7 +47,7 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 
 Haz click aquí para probar la aplicación: [Link](https://juancumbe.com/M12_WebApp/index.php)
 
-Credenciales
+Credenciales:
 
 - Usuario: dpto_desarrollo@gmail.com
 - Contraseña: desarrollo
