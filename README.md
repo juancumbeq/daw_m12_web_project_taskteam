@@ -45,13 +45,12 @@ In summary, this web application aims to provide a comprehensive and efficient s
 
 ## Demo
 
-Click here to try this application: [Link](https://juancumbe.com/M12_WebApp/index.php)
+Click here to try this application: [Link](https://juancumbe.com/TaskTeam/index.php)
 
 Credentials:
+
 - User: dpto_desarrollo@gmail.com
 - Password: desarrollo
-
-![](https://img.shields.io/badge/Server%20under%20maintenance-yellow?)
 
 <br>
 
@@ -79,15 +78,15 @@ Make sure you have XAMPP installed on your computer. You can download it from [t
 
 - **Transfer of the Web Application**:
 
-  - Copy the web application files to the htdocs folder within the XAMPP installation directory. Usually, this folder is located at C:\xampp\htdocs on Windows systems or /Applications/XAMPP/htdocs on macOS. The resulting path should be: /Applications/XAMPP/xamppfiles/htdocs/DAW_FP/M12_WebApp/.
+  - Clone this repositorie or copy the web application files to the htdocs folder within the XAMPP installation directory. Usually, this folder is located at C:\xampp\htdocs on Windows systems or /Applications/XAMPP/htdocs on macOS. The resulting path should be: /Applications/XAMPP/xamppfiles/htdocs/TaskTeam/.
 
 - **Starting the Local Server**:
 
   - Return to the XAMPP Control Panel and click on "Start" to initiate the Apache and MySQL services.
-  - Open your web browser and visit [http://localhost/DAW_FP/M12_WebApp/index_main.php](http://localhost/DAW_FP/M12_WebApp/index_main.php)
+  - Open your web browser and visit [http://localhost/TaskTeam/index.php](http://localhost/TaskTeam/index.php)
 
 - **Application Testing**:
-  - If everything was configured correctly, you should be able to see the TaskTeam login page. Congratulations! You have successfully installed your PHP web application on your local server using XAMPP. Now you can start developing and testing your application without needing an internet connection.
+  - If everything was configured correctly, you should be able to see the TaskTeam login page. Congratulations! You have successfully installed your PHP web application on your local server using XAMPP. Now you can start testing this application without needing an internet connection.
 
 <br>
 

@@ -45,14 +45,13 @@ En resumen, esta aplicación web tiene como objetivo proporcionar una solución 
 
 ## Demo
 
-Haz click aquí para probar la aplicación: [Link](https://juancumbe.com/M12_WebApp/index.php)
+Haz click aquí para probar la aplicación: [Link](https://juancumbe.com/TaskTeam/index.php)
 
 Credenciales:
 
 - Usuario: dpto_desarrollo@gmail.com
 - Contraseña: desarrollo
 
-![](https://img.shields.io/badge/Sevidor%20en%20mantenimiento-yellow?)
 
 <br>
 
@@ -62,7 +61,7 @@ Credenciales:
 
 ### Requisitos Previos
 
-Asegúraese de tener XAMPP instalado en tu computadora. Puedes descargarlo desde [el sitio web oficial de Apache Friends.](https://www.apachefriends.org/es/index.html)
+Asegúrese de tener XAMPP instalado en su equipo. Puede descargarlo desde [el sitio web oficial de Apache Friends.](https://www.apachefriends.org/es/index.html)
 
 ### Pasos de Instalación
 
@@ -80,15 +79,15 @@ Asegúraese de tener XAMPP instalado en tu computadora. Puedes descargarlo desde
 
 - **Transferencia de la Aplicación Web**:
 
-  - Copia los archivos de la aplicación web al directorio htdocs dentro del directorio de instalación de XAMPP. Por lo general, este directorio se encuentra en C:\xampp\htdocs en sistemas Windows o /Applications/XAMPP/htdocs en macOS. La ruta resultante debería ser: /Applications/XAMPP/xamppfiles/htdocs/m12_TaskTeam/.
+  - Clona este repositorio o copia los archivos de la aplicación web al directorio htdocs dentro del directorio de instalación de XAMPP. Por lo general, este directorio se encuentra en C:\xampp\htdocs en sistemas Windows o /Applications/XAMPP/htdocs en macOS. La ruta resultante debería ser: /Applications/XAMPP/xamppfiles/htdocs/TaskTeam/.
 
 - **Iniciar el Servidor Local**:
 
   - Vuelve al Panel de Control de XAMPP y haz clic en "Start" para iniciar los servicios de Apache y MySQL.
-  - Abre tu navegador web y visita [http://localhost/m12_TaskTeam/index_main.php](http://localhost/m12_TaskTeam/index.php)
+  - Abre tu navegador web y visita [http://localhost/TaskTeam/index.php](http://localhost/TaskTeam/index.php)
 
 - **Pruebas de Aplicación**:
-  - Si todo se configuró correctamente, deberías poder ver la página de inicio de sesión de TaskTeam. ¡Felicidades! Has instalado con éxito tu aplicación web PHP en tu servidor local utilizando XAMPP. Ahora puedes comenzar a desarrollar y probar tu aplicación sin necesidad de una conexión a internet.
+  - Si todo se configuró correctamente, deberías poder ver la página de inicio de sesión de TaskTeam. ¡Felicidades! Has instalado con éxito tu aplicación web PHP en tu servidor local utilizando XAMPP. Ahora puedes comenzar probar la aplicación sin necesidad de una conexión a internet.
 
 <br>
 
